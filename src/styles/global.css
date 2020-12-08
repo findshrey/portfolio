@@ -1,0 +1,40 @@
+/* Contains Config, Utilities and Global settings */
+
+:root {
+  --text-color-primary : #191919;
+  --bg-light: #fff;
+}
+
+@font-face {
+  font-family: 'Biotif-Regular';
+  src: url('./../../public/fonts/Biotif-Regular.ttf');
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-light);
+  color: var(--text-color-primary);
+  font-family: 'Biotif-Regular', sans-serif;
+  line-height: 1.6;
+}
+
+
+
+ /* a {
+  color: inherit;
+   text-decoration: none;
+ }
+
+ * {
+   box-sizing: border-box;
+ } */
