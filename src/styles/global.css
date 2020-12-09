@@ -1,14 +1,28 @@
 /* Contains Config, Utilities and Global settings */
 
 :root {
-  --text-color-primary : #191919;
   --bg-light: #fff;
+
+  --font-primary: 'Biotif-Regular', sans-serif;
+  
+  --text-color-primary : #191919;
+
+  /* --l-text: calc(1.2rem + 0.75vw); */
+  --text-size-m: calc(1rem + 0.5vw);
+  /* --s-text: calc(0.8rem + 0.5vw); */
+
+  /* --section-padding: calc(8rem + 2vw) 0; */
 }
 
 @font-face {
   font-family: 'Biotif-Regular';
-  src: url('./../../public/fonts/Biotif-Regular.ttf');
+  src: url('/fonts/Biotif-Regular.ttf');
 }
+
+/* @font-face {
+  font-family: 'Biotif-Bold';
+  src: url('/fonts/Biotif-Bold.ttf');
+} */
 
 *, *::before, *::after {
   margin: 0;
@@ -24,17 +38,69 @@ html {
 body {
   background: var(--bg-light);
   color: var(--text-color-primary);
-  font-family: 'Biotif-Regular', sans-serif;
+  font-family: var(--font-primary);
   line-height: 1.6;
 }
 
+/* h1 {
+  font-family: 'Josefin Sans Thin', sans-serif;
+  font-size: var(--header1);
+  letter-spacing: calc(0.1rem + 0.25vw);
+}
 
+h2 {
+  font-family: 'Josefin Sans Light', sans-serif;
+  font-size: var(--header2);
+}
 
- /* a {
+h3 {
+  font-family: 'Josefin Sans Light', sans-serif;
+  font-size: var(--header3);
+}
+
+h4 {
+  font-family: 'Josefin Sans Light', sans-serif;
+  font-size: var(--header4);
+} */
+
+p, span, li, a, label, input, button {
+  font-size: var(--text-size-m);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  /* color: var(--text-color-primary); */
   color: inherit;
-   text-decoration: none;
- }
+  text-decoration: none;
+}
 
- * {
-   box-sizing: border-box;
- } */
+button {
+  font-family: inherit;
+}
+
+/* img {
+  width: 100%;
+} */
+
+/* UTILITY CLASSES */
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  /* border-bottom: 1px solid var(--matte-black); */
+  /* font-style: italic; */
+  cursor: pointer;
+  /* background: transparent; */
+  /* color: var(--matte-black); */
+}
+
+.btn:focus {
+  outline: none;
+}
