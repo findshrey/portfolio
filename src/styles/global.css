@@ -1,5 +1,10 @@
-/* Contains Config, Utilities and Global settings */
+/* Contains
+    CONFIG
+    GLOBAL SETTINGS
+    UTILITY CLASSES */
 
+
+/* CONFIG */
 :root {
   --bg-light: #fff;
 
@@ -24,6 +29,7 @@
   src: url('/fonts/Biotif-Bold.ttf');
 } */
 
+/* GLOBAL SETTINGS */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -37,7 +43,7 @@ html {
 
 body {
   background: var(--bg-light);
-  color: var(--text-color-primary);
+  color: white;
   font-family: var(--font-primary);
   line-height: 1.6;
 }

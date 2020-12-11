@@ -1,0 +1,24 @@
+.logo {
+   height: 30vh;
+}
+
+.menu {
+   /* mix-blend-mode: lighten; */
+}
+
+/* .burger span {
+   padding: 0.2rem 2rem;
+   background: var(--gray-text);
+   margin: 0.5rem 0rem;
+   display: block;
+   transition: all 0.5s ease;
+ } */
+
+ .line {
+   padding: 0.2rem 2rem;
+   /* background: var(--text-color-primary); */
+   mix-blend-mode: difference;
+   margin: 0.5rem 0rem;
+   display: block;
+   /* transition: all 0.5s ease; */
+ }

@@ -1,19 +1,14 @@
 import Head from 'next/head'
-import styles from '../styles/components/Homepage.module.css'
+import Header from './../components/Header'
 
-const Home = () => {
+const PortfolioApp = () => {
   return (
-    <div>
-      <nav>
-        <ul>
-          <li><a href="">abc</a></li>
-          <li><a href="">abc</a></li>
-          <li><a href="">abc</a></li>
-        </ul>
-      </nav>
-      <button className="btn">Click ME</button>
-    </div>
+    <>
+      <Header />
+      <main></main>
+      <footer></footer>
+    </>
   )
 }
 
-export default Home
+export default PortfolioApp
