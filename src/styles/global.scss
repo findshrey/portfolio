@@ -4,21 +4,6 @@
     UTILITY CLASSES */
 
 
-/* CONFIG */
-:root {
-  --bg-light: #fff;
-
-  --font-primary: 'Biotif-Regular', sans-serif;
-  
-  --text-color-primary : #191919;
-
-  /* --l-text: calc(1.2rem + 0.75vw); */
-  --text-size-m: calc(1rem + 0.5vw);
-  /* --s-text: calc(0.8rem + 0.5vw); */
-
-  /* --section-padding: calc(8rem + 2vw) 0; */
-}
-
 @font-face {
   font-family: 'Biotif-Regular';
   src: url('/fonts/Biotif-Regular.ttf');
@@ -42,9 +27,9 @@ html {
 }
 
 body {
-  background: var(--bg-light);
+  background: $bg-light;
   color: white;
-  font-family: var(--font-primary);
+  font-family: $font-primary;
   line-height: 1.6;
 }
 
@@ -70,7 +55,7 @@ h4 {
 } */
 
 p, span, li, a, label, input, button {
-  font-size: var(--text-size-m);
+  font-size: $text-size-m;
 }
 
 ul {
@@ -78,7 +63,7 @@ ul {
 }
 
 a {
-  /* color: var(--text-color-primary); */
+  /* color: var($text-color-primary); */
   color: inherit;
   text-decoration: none;
 }

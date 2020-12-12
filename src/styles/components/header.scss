@@ -1,5 +1,6 @@
 .logo {
    height: 30vh;
+   color: $text-color-primary;
 }
 
 .menu {
@@ -16,8 +17,7 @@
 
  .line {
    padding: 0.2rem 2rem;
-   /* background: var(--text-color-primary); */
-   mix-blend-mode: difference;
+   background: var(--text-color-primary);
    margin: 0.5rem 0rem;
    display: block;
    /* transition: all 0.5s ease; */

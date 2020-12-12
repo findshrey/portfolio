@@ -1,20 +1,20 @@
 import Image from 'next/image'
-import styles from './../styles/components/Header.module.css'
+// import styles from './../styles/components/Header.module.scss'
 
 const Header = () => {
    return (
       <header>
          <div className="container">
-            <div className={styles.logo}>
+            <div className="logo">
                <Image src="/TEST.svg" width="48" height="48" />
             </div>
-            <div className={styles.menu}>
+            <div >
                <Image src="/menu.svg" width="45" height="22" />
             </div>
-            <div class="burger">
-               <span className={styles.line}></span>
-               <span className={styles.line}></span>
-               <span className={styles.line}></span>
+            <div className="burger">
+               <span ></span>
+               <span ></span>
+               <span ></span>
             </div>
          </div>
       </header>
