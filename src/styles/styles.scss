@@ -1,4 +1,7 @@
-@import './variables.scss';
-@import './global.scss';
+// System
+@import './base/config';
+@import './base/utilities';
+@import './base/global';
 
-@import './components/header.scss';
+// Components
+@import './components/header';

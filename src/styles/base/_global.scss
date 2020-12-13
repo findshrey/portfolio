@@ -1,0 +1,63 @@
+@font-face {
+   font-family: 'Biotif-Regular';
+   src: url('/fonts/Biotif-Regular.ttf');
+}
+ 
+/* @font-face {
+   font-family: 'Biotif-Bold';
+   src: url('/fonts/Biotif-Bold.ttf');
+} */
+ 
+ /* GLOBAL SETTINGS */
+*, *::before, *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ 
+html {
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+ 
+body {
+   background: $bg-light;
+   color: white;
+   font-family: $font-primary;
+   line-height: 1.6;
+}
+
+// h1 {
+//    @include header($header1, 400, 2px);
+// }
+// h2 {
+//    @include header($header2, 600, 2px);
+// }
+// h3 {
+//    @include header($header3, 300, 1px);
+// }
+// h4 {
+//    @include header($header4, 600, 1px);
+// }
+
+div, span, p, a, li, label, input, button {
+   font-size: $text-size-m;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   /* color: var($text-color-primary); */
+   color: inherit;
+   text-decoration: none;
+}
+
+button {
+   font-family: inherit;
+}
+
+/* img {
+   width: 100%;
+} */
