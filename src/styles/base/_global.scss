@@ -22,7 +22,7 @@ html {
  
 body {
    background: $bg-light;
-   color: white;
+   color: $text-color-primary;
    font-family: $font-primary;
    line-height: 1.6;
 }
@@ -55,6 +55,7 @@ a {
 }
 
 button {
+   color: inherit;
    font-family: inherit;
 }
 

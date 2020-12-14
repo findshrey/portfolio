@@ -1,24 +1,50 @@
-.logo {
-   height: 30vh;
-   color: $text-color-primary;
+.hamburger {
+   position: fixed;
+   z-index: 100;
+   top: 0;
+   left: 0;
+   background: transparent;
+   border: none;
+
+   & div {
+      width: 24px;
+      height: 2.5px;
+      display: block;
+      margin: 5px auto;
+      background: rgb(45, 100, 219);
+
+      &:nth-of-type(2) {
+         width: 34px;
+      }
+   }
 }
 
-.menu {
-   /* mix-blend-mode: lighten; */
+.nav {
+   position: fixed;
+   top: 0;
+   left: -40%;   // Set same as based on width
+   z-index: 99;
+   height: 100vh;
+   width: 40vw;
+   background: goldenrod;
 }
 
-/* .burger span {
-   padding: 0.2rem 2rem;
-   background: var(--gray-text);
-   margin: 0.5rem 0rem;
-   display: block;
-   transition: all 0.5s ease;
- } */
+.nav.active {
+   left: 0;
+}
 
- .line {
-   padding: 0.2rem 2rem;
-   background: var(--text-color-primary);
-   margin: 0.5rem 0rem;
-   display: block;
-   /* transition: all 0.5s ease; */
- }
+.external {
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 100;
+   // mix-blend-mode: difference;
+
+   & a {
+      fill: red;
+   }
+}
+
+#brackets, #middle-part {
+   // mix-blend-mode: difference;
+}

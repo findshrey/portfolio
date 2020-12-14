@@ -1,0 +1,12 @@
+<svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="trynex">
+<path id="brackets" d="M3.26458 0.500031L0.375488 1.95917V3.65176L4.49025 5.69456L3.26458 6.30739L0.375488 4.96499V6.54085L3.26458 7.99999L6.12448 6.54085V4.81907L1.98054 2.7471L3.26458 2.10508L6.12448 3.56422V1.87162L3.26458 0.500031Z" fill="url(#paint0_linear)"/>
+<path id="middle-part" d="M0.375488 3.65177V1.95917L6.12448 4.78989V6.51167L0.375488 3.65177Z" fill="#2B7E47"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="3.24999" y1="0.500031" x2="3.24999" y2="7.99999" gradientUnits="userSpaceOnUse">
+<stop stop-color="#23E27B"/>
+<stop offset="1" stop-color="#26924B"/>
+</linearGradient>
+</defs>
+</svg>
