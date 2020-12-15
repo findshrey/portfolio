@@ -1,17 +1,24 @@
 .hamburger {
    position: fixed;
-   z-index: 100;
    top: 0;
    left: 0;
+   margin: 15px 0 0 15px;
+   z-index: 100;
    background: transparent;
    border: none;
+   cursor: pointer;
+   // mix-blend-mode: difference;
+
+   &:focus {
+      outline: none;
+   }
 
    & div {
       width: 24px;
       height: 2.5px;
       display: block;
       margin: 5px auto;
-      background: rgb(45, 100, 219);
+      background: $text-color-primary;
 
       &:nth-of-type(2) {
          width: 34px;
@@ -19,32 +26,44 @@
    }
 }
 
-.nav {
+.navigation {
    position: fixed;
    top: 0;
-   left: -40%;   // Set same as based on width
+   left: -45%;   // Set same as based on width
    z-index: 99;
    height: 100vh;
-   width: 40vw;
+   width: 45vw;
    background: goldenrod;
-}
+   transition: all 0.4s ease-in-out;
 
-.nav.active {
-   left: 0;
+   &.active {
+      left: 0;
+   }
+
+   ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      li {
+         margin: 2rem 0;
+      }
+   }
 }
 
 .external {
    position: fixed;
    top: 0;
    right: 0;
-   z-index: 100;
+   margin: 15px 15px 0 0;
+   z-index: 97;
    // mix-blend-mode: difference;
+   display: flex;
 
    & a {
-      fill: red;
+      margin-left: 13px;
+      fill: $text-color-primary;
    }
-}
-
-#brackets, #middle-part {
-   // mix-blend-mode: difference;
 }
