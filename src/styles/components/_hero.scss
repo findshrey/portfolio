@@ -1,0 +1,40 @@
+.hero {
+   background: $c-matte-black;
+   height: 100vh;
+   color: $c-white;
+
+   .container {
+      height: 100%;
+   }
+   
+   &-intro {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+   }
+
+   h1 {
+      
+   }
+
+   h2 {
+      color: darken($c-white, 5%);
+   }
+
+   h4 {
+      margin-left: 0.5rem;
+      color: $c-special;
+   }
+
+   p {
+      margin: 2rem 0 3rem 0;
+   }
+}
+
+.call-to-action {
+   a:nth-of-type(1) {
+      margin-right: 2rem;
+   }
+}

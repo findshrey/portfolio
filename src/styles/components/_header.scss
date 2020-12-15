@@ -7,7 +7,7 @@
    background: transparent;
    border: none;
    cursor: pointer;
-   // mix-blend-mode: difference;
+   mix-blend-mode: difference;
 
    &:focus {
       outline: none;
@@ -18,7 +18,7 @@
       height: 2.5px;
       display: block;
       margin: 5px auto;
-      background: $text-color-primary;
+      background: $c-white;
 
       &:nth-of-type(2) {
          width: 34px;
@@ -33,7 +33,7 @@
    z-index: 99;
    height: 100vh;
    width: 45vw;
-   background: goldenrod;
+   background: $c-white;
    transition: all 0.4s ease-in-out;
 
    &.active {
@@ -64,6 +64,6 @@
 
    & a {
       margin-left: 13px;
-      fill: $text-color-primary;
+      fill: $c-white;
    }
 }

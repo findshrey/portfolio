@@ -13,6 +13,11 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+
+   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
 }
 
 html {
@@ -21,27 +26,27 @@ html {
 }
  
 body {
-   background: $bg-light;
-   color: $text-color-primary;
+   background: $c-white;
+   color: $c-matte-black;
    font-family: $font-primary;
    line-height: 1.6;
 }
 
-// h1 {
-//    @include header($header1, 400, 2px);
-// }
-// h2 {
-//    @include header($header2, 600, 2px);
-// }
-// h3 {
-//    @include header($header3, 300, 1px);
-// }
-// h4 {
-//    @include header($header4, 600, 1px);
-// }
+h1 {
+   @include header($header1, 700, 0px);
+}
+h2 {
+   @include header($header2, 700, 0px);
+}
+h3 {
+   @include header($header3, 400, 1px);
+}
+h4 {
+   @include header($header4, 400, 1px);
+}
 
 div, span, p, a, li, label, input, button {
-   font-size: $text-size-m;
+   font-size: $font-m;
 }
 
 ul {
@@ -49,7 +54,7 @@ ul {
 }
 
 a {
-   /* color: var($text-color-primary); */
+   /* color: var($c-matte-black); */
    color: inherit;
    text-decoration: none;
 }

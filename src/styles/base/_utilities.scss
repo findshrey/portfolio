@@ -17,6 +17,16 @@
    // border-radius: 1px;
 }
 
+.btn {
+   &-primary {
+      @extend %btn-common;
+      background:$c-special;
+      padding: 1.2rem 2.4rem;
+      border-radius: 2px;
+      display: inline-block;
+   }
+}
+
 // .btn {
 //    &-light {
 //       @extend %btn-common;
