@@ -6,8 +6,15 @@
    .container {
       height: 100%;
    }
-   
+
    &-intro {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+   }
+   
+   &-text {
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -31,6 +38,20 @@
    p {
       margin: 2rem 0 3rem 0;
    }
+}
+
+#qq #task {
+   position: absolute;
+   top: 0;
+   left: 0;
+   fill: red;
+   color: red;
+   background-color: red;
+   border: 2px solid red;
+}
+
+#gen {
+   position: relative;
 }
 
 .call-to-action {
