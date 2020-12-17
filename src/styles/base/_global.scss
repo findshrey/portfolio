@@ -1,14 +1,4 @@
-@font-face {
-   font-family: 'Biotif-Regular';
-   src: url('/fonts/Biotif-Regular.ttf');
-}
- 
-/* @font-face {
-   font-family: 'Biotif-Bold';
-   src: url('/fonts/Biotif-Bold.ttf');
-} */
- 
- /* GLOBAL SETTINGS */
+/* GLOBAL SETTINGS */
 *, *::before, *::after {
    margin: 0;
    padding: 0;
@@ -29,7 +19,7 @@ body {
    background: $c-white;
    color: $c-matte-black;
    font-family: $font-primary;
-   line-height: 1.6;
+   line-height: 1.5;
 }
 
 h1 {
@@ -46,7 +36,7 @@ h4 {
 }
 
 div, span, p, a, li, label, input, button {
-   font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem); // $font-m
+   font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem);   // $font-m
 }
 
 ul {

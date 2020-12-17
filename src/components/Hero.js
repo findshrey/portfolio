@@ -10,8 +10,8 @@ const Hero = () => {
                   <h1>Shrey Sharma.</h1>
                   <h2>I build things for the web.</h2>
                   <p>
-                     I'm a software engineer based in Delhi, specializing in <br />
-                     building (and occasionally designing) exceptional websites, <br />
+                     I'm a software engineer based in Delhi, specializing in
+                     building (and occasionally designing) exceptional websites,
                      applications, and everything in between.
                   </p>
                   <div className="call-to-action">

@@ -1,8 +1,7 @@
 .hero {
-   background: $c-matte-black;
+   background: radial-gradient($c-matte-black, darken($c-matte-black, 10%));
    height: 100vh;
    color: $c-white;
-   position: relative;
 
    .container {
       height: 100%;
@@ -13,15 +12,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      z-index: 10;
-      position: relative;
-
-      #gg {
-         position: absolute;
-         top: 50%;
-         right: 0%;
-         transform: translateY(-50%);
-      }
    }
    
    &-text {
@@ -29,8 +19,6 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      // z-index: 10;
    }
 
    h1 {
@@ -38,26 +26,34 @@
       // background: $c-nex;
       // background-clip: text;
       // -webkit-text-fill-color: transparent;
+      line-height: 1.4;
    }
 
    h2 {
       // color: darken($c-white, 5%);
       // color: #f7f7f7;
+      line-height: 1.4;
    }
 
    h4 {
-      margin-left: 0.5rem;
+      margin-left: 5px;
    }
 
    p {
       font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem);
       margin: 3rem 0 5rem 0;
+      max-width: 60rem;   // for widescreen set 80rem
    }
 }
 
-
 .call-to-action {
    a:nth-of-type(1) {
-      margin-right: 2rem;
+      margin-right: 2.5rem;
    }
+}
+
+@media (max-width: 800px) {
+   // .hero-intro {
+   //    flex-direction: column;
+   // }
 }

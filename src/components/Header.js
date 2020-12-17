@@ -2,17 +2,19 @@ import { useState } from 'react'
 import Backdrop from './Backdrop/Backdrop'
 
 const Header = () => {
-   const [sidebar, setSidebar] = useState(false)
+   const [sideDrawer, setSideDrawer] = useState(false)
 
-   // Toggles sidebar
-   const handleSidebar = () => setSidebar(!sidebar)
+   // Toggle sideDrawer
+   const handleSideDrawer = () => setSideDrawer(!sideDrawer)
 
-   // Removes backdrop and hides sidebar
-   const handleBackdrop = () => setSidebar(false)
+   // Remove backdrop and hide sideDrawer
+   const handleBackdrop = () => setSideDrawer(false)
 
+   let navClass = 'navigation'
    let backdrop
 
-   if (sidebar) {
+   if (sideDrawer) {
+      navClass = 'navigation active'
       backdrop = <Backdrop click={handleBackdrop} />
    }
 
@@ -23,17 +25,17 @@ const Header = () => {
          {
             backdrop
          }
-         <button className="hamburger" onClick={handleSidebar}>
+         <button className="hamburger" onClick={handleSideDrawer}>
             <div></div>
             <div></div>
             <div></div>
          </button>
-         <nav className={sidebar ? 'navigation active' : 'navigation'}>
+         <nav className={navClass}>
             <ul>
                {
                   navOptions.map((option, index) =>
                      <li key={index}>
-                        <a href={`#${option}`} onClick={handleSidebar}>
+                        <a href={`#${option}`} onClick={handleSideDrawer}>
                            {option}
                         </a>
                      </li>
