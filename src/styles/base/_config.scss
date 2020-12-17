@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-
+// Fonts
 $font-primary: 'Andika New Basic', sans-serif;
-// $font-primary: 'Raleway', sans-serif;
 
 // Header(Tag) sizes
-$header1: 7rem;   // calc(3rem + 1.5vw)
-$header2: 7rem;   //calc(2rem + 1vw)
+$header1: clamp(4rem, calc(3.5rem + 2vw), 7rem);   // calc(3rem + 1.5vw)
+$header2: clamp(4rem, calc(3.5rem + 2vw), 7rem);   //calc(2rem + 1vw)
 $header3: 1rem;   // calc(1.5rem + 1vw)
-$header4: 2rem;   // calc(1rem + 0.75vw)
+$header4: clamp(1.5rem, calc(1rem + 0.75vw), 3rem);   // calc(1rem + 0.75vw)
 
-// Text Sizes
+// Text sizes
 // $text-size-l: calc(1.2rem + 0.75vw);
 $font-m: calc(1rem + 0.75vw);   // calc(1rem + 0.5vw)
 // $text-size-s: calc(0.8rem + 0.5vw);
@@ -20,6 +18,9 @@ $font-m: calc(1rem + 0.75vw);   // calc(1rem + 0.5vw)
 $c-white: #fff;
 $c-matte-black : #252525;
 $c-special:  #e91e63;
+
+$c-nex: linear-gradient(to right,#e91e63,  #e91eb6);
+$gradient: linear-gradient(to right, #38d39f, #38a4d3);
 
 // Section padding
 /* --section-padding: calc(8rem + 2vw) 0; */

@@ -46,7 +46,7 @@ h4 {
 }
 
 div, span, p, a, li, label, input, button {
-   font-size: $font-m;
+   font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem); // $font-m
 }
 
 ul {
