@@ -1,6 +1,6 @@
-import Head from 'next/head'
 import Header from './../components/Header'
 import Hero from './../components/Hero'
+import Projects from './../components/Projects'
 
 const PortfolioApp = () => {
   return (
@@ -8,6 +8,7 @@ const PortfolioApp = () => {
       <Header />
       <main>
         <Hero />
+        <Projects />
       </main>
       <footer></footer>
     </>
