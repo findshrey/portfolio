@@ -30,6 +30,7 @@
    }
 
    h2 {
+      margin-top: 1rem;
       line-height: 1.4;
    }
 
@@ -50,12 +51,6 @@
    }
 }
 
-@media (max-width: 800px) {
-   // .hero-intro {
-   //    flex-direction: column;
-   // }
-}
-
 #box1, #box2, #box3,
 #outline1, #outline2, #outline3 {
    animation: spin 4s linear infinite;
@@ -63,8 +58,29 @@
    transform-origin: center;
 }
 
+// Spinning animation
 @keyframes spin {
    100% {
       transform: rotate(360deg);
+   }
+}
+
+// Tablets
+@media (max-width: 800px) {
+   #thinking {
+      display: none;
+   }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+   .hero {
+      h1, h2 {
+         line-height: 1.3;
+      }
+
+      p {
+         margin: 2rem 0 3rem 0;
+      }
    }
 }

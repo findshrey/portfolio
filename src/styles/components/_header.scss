@@ -68,4 +68,11 @@
    }
 }
 
+@media (max-width: 500px) {
+   .navigation {
+      left: -55%;   // Set same as based on width
+      width: 55vw;
+   }
+}
+
 // Hamburger -> Drawer -> Backdrop -> Externals [Z-index priority]

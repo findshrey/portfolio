@@ -1,4 +1,5 @@
-/* GLOBAL SETTINGS */
+// Global Styles
+
 *, *::before, *::after {
    margin: 0;
    padding: 0;
@@ -19,7 +20,7 @@ body {
    background: $c-white;
    color: $c-matte-black;
    font-family: $font-primary;
-   line-height: 1.5;
+   line-height: 1.6;
 }
 
 h1 {

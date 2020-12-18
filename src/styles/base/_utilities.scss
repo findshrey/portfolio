@@ -1,4 +1,4 @@
-// Utility Classes, Mixins and Functions
+// Utility Classes and Mixins
 
 .container {
    width: 90%;
@@ -8,49 +8,23 @@
  
 // Buttons
 %btn-common {
-   // border: none;
-   // background: transparent;
+   border-radius: 2px;
    cursor: pointer;
-
-   // transition: all 0.4s ease;
-   // padding: 1.5rem 2rem;
-   // border-radius: 1px;
+   display: inline-block;
+   transition: all 0.4s ease;
 }
 
 .btn {
    &-primary {
       @extend %btn-common;
       background: $c-special;
-      padding: 1rem 3rem;
-      border-radius: 2px;
-      display: inline-block;
+      padding: 0.8rem 2.5rem;
+
+      &:hover {
+         background: darken($c-special, 15%);
+      }
    }
 }
-
-// .btn {
-//    &-light {
-//       @extend %btn-common;
-//       background: $text-light;
-//       border: 1px solid $text-light;
-
-//       &:hover {
-//          background: transparent;
-//          color: $text-light;
-//       }
-//    }
-
-//    &-reserve {
-//       @extend %btn-common;
-//       background: rgba(darken($text-dark, 20%), 0.4);
-//       border: 1px solid darken($text-light, 65%);
-//       color: darken($text-light, 20%);
-
-//       &:hover {
-//          background: $text-light;
-//          color: $text-dark;
-//       }
-//    }
-// }
 
 // Header properties
 @mixin header($f-size, $f-weight, $l-spacing) {

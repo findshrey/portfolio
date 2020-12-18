@@ -1,7 +1,7 @@
 const svgThinking = (
-   <svg width="443" height="498" viewBox="0 0 443 498" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="thinking">
-         <g id="wondering">
+   <svg id="thinking" width="443" height="498" viewBox="0 0 443 498" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g>
+         <g id="thinking-inner">
             <g id="sitting">
                <path id="Vector" d="M102.591 382.293L77.772 380.638L86.045 417.867L114.173 406.285L102.591 382.293Z" fill="#FFB9B9" />
                <path id="Vector_2" d="M330.1 312.799L272.189 256.542L239.096 282.189L173.739 360.783L181.185 372.365L260.606 318.59L314.381 388.911L365.674 363.266L330.1 312.799Z" fill="#2F2E41" />
