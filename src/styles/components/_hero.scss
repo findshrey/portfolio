@@ -1,7 +1,7 @@
 .hero {
    background: radial-gradient($c-matte-black, darken($c-matte-black, 10%));
    height: 100vh;
-   color: $c-white;
+   color: darken($c-white, 5%);
 
    .container {
       height: 100%;
@@ -18,20 +18,18 @@
       height: 100%;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       justify-content: center;
    }
 
    h1 {
-      color: $c-special;
-      // background: $c-nex;
-      // background-clip: text;
-      // -webkit-text-fill-color: transparent;
+      background: $c-gradient;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
       line-height: 1.4;
    }
 
    h2 {
-      // color: darken($c-white, 5%);
-      // color: #f7f7f7;
       line-height: 1.4;
    }
 
@@ -56,4 +54,17 @@
    // .hero-intro {
    //    flex-direction: column;
    // }
+}
+
+#box1, #box2, #box3,
+#outline1, #outline2, #outline3 {
+   animation: spin 4s linear infinite;
+   transform-box: fill-box;
+   transform-origin: center;
+}
+
+@keyframes spin {
+   100% {
+      transform: rotate(360deg);
+   }
 }
