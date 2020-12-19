@@ -35,13 +35,14 @@
    }
 
    h4 {
+      font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem);
       margin-left: 5px;
    }
 
    p {
       font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem);
       margin: 3rem 0 5rem 0;
-      max-width: 60rem;   // for widescreen set 80rem
+      max-width: 70rem;
    }
 }
 

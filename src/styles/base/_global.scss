@@ -24,20 +24,21 @@ body {
 }
 
 h1 {
-   @include header($header1, 700, 0px);
+   font-size: $header1;
 }
 h2 {
-   @include header($header2, 700, 0px);
+   font-size: $header2;
 }
 h3 {
-   @include header($header3, 400, 1px);
+   font-size: $header3;
 }
 h4 {
-   @include header($header4, 400, 1px);
+   font-size: $header4;
+   font-weight: 400;
 }
 
 div, span, p, a, li, label, input, button {
-   font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem);   // $font-m
+   font-size: $font-m; //clamp(1.5rem, calc(1rem + 0.75vw), 3rem)
 }
 
 ul {
@@ -55,6 +56,6 @@ button {
    font-family: inherit;
 }
 
-/* img {
+img {
    width: 100%;
-} */
+}

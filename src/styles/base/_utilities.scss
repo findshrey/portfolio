@@ -5,6 +5,12 @@
    max-width: 1440px;
    margin: 0 auto;
 }
+
+.container-small {
+   width: 90%;
+   max-width: 1280px;
+   margin: 0 auto;
+}
  
 // Buttons
 %btn-common {
@@ -15,20 +21,46 @@
 }
 
 .btn {
-   &-primary {
+   &-pink {
       @extend %btn-common;
-      background: $c-special;
+      background: $c-pink;
       padding: 0.8rem 2.5rem;
 
       &:hover {
-         background: darken($c-special, 15%);
+         background: darken($c-pink, 15%);
+      }
+   }
+}
+
+// Section Headers
+%head-common {
+   text-align: center;
+   margin-bottom: calc(6rem + 1.5vw);
+
+   h3:after {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 55px;
+      margin: 0 auto;
+      margin-top: 25px;
+   }
+}
+
+.head {
+   &-pink {
+      @extend %head-common;
+      color: darken($c-pink, 5%);
+
+      h3:after {
+         background: darken($c-pink, 5%);
       }
    }
 }
 
 // Header properties
-@mixin header($f-size, $f-weight, $l-spacing) {
-   font-size: $f-size;
-   font-weight: $f-weight;
-   letter-spacing: $l-spacing;
-}
+// @mixin header($f-size, $f-weight, $l-spacing) {
+//    font-size: $f-size;
+//    font-weight: $f-weight;
+//    letter-spacing: $l-spacing;
+// }

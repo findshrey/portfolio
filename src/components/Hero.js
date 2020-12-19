@@ -15,8 +15,8 @@ const Hero = () => {
                      applications, and everything in between.
                   </p>
                   <div className="call-to-action">
-                     <a href="" className="btn-primary">Projects</a>
-                     <a href="" className="btn-primary">Contact</a>
+                     <a href="" className="btn-pink">Projects</a>
+                     <a href="" className="btn-pink">Contact</a>
                   </div>
                </div>
                {
