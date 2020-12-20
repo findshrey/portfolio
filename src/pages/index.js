@@ -3,6 +3,7 @@ import Hero from './../components/Hero'
 import Projects from './../components/Projects'
 import Divider from './../components/utilities/divider'
 import About from './../components/About'
+import Contact from './../components/Contact'
 
 const PortfolioApp = () => {
   return (
@@ -13,6 +14,7 @@ const PortfolioApp = () => {
         {/* <Projects /> */}
         <Divider />
         <About />
+        <Contact />
       </main>
       <footer></footer>
     </>

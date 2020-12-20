@@ -1,0 +1,28 @@
+.contact {
+   padding: $section-padding;
+}
+
+.form-wrapper {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+.form {
+   width: 100%;
+   max-width: 500px;
+
+   &-input {
+      label {
+         display: block;
+      }
+
+      input {
+         width: 100%;
+      }
+
+      textarea {
+         width: 100%;
+      }
+   }
+}

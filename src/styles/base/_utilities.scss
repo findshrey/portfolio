@@ -65,6 +65,15 @@
          background: darken($c-white, 5%);
       }
    }
+
+   &-black {
+      @extend %head-common;
+      color: $c-matte-black;
+
+      h3:after {
+         background: $c-matte-black;
+      }
+   }
 }
 
 // Header properties
