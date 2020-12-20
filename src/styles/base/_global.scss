@@ -37,7 +37,7 @@ h4 {
    font-weight: 400;
 }
 
-div, span, p, a, li, label, input, button {
+div, span, p, a, li, button {
    font-size: $font-m; //clamp(1.5rem, calc(1rem + 0.75vw), 3rem)
 }
 

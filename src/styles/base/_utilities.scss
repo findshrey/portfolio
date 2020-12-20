@@ -14,7 +14,8 @@
  
 // Buttons
 %btn-common {
-   border-radius: 2px;
+   border: none;
+   border-radius: 3px;
    cursor: pointer;
    display: inline-block;
    transition: all 0.4s ease;
@@ -24,7 +25,8 @@
    &-pink {
       @extend %btn-common;
       background: $c-pink;
-      padding: 0.8rem 2.5rem;
+      color: $c-white;
+      padding: 1rem 2.5rem;
 
       &:hover {
          background: darken($c-pink, 15%);
