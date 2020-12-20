@@ -56,6 +56,15 @@
          background: darken($c-pink, 5%);
       }
    }
+
+   &-white {
+      @extend %head-common;
+      color: darken($c-white, 5%);
+
+      h3:after {
+         background: darken($c-white, 5%);
+      }
+   }
 }
 
 // Header properties
