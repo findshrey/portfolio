@@ -4,6 +4,7 @@ import Projects from './../components/Projects'
 import Divider from './../components/utilities/divider'
 import About from './../components/About'
 import Contact from './../components/Contact'
+import Footer from './../components/Footer'
 
 const PortfolioApp = () => {
   return (
@@ -11,12 +12,12 @@ const PortfolioApp = () => {
       <Header />
       <main>
         <Hero />
-        {/* <Projects /> */}
+        <Projects />
         <Divider />
         <About />
         <Contact />
       </main>
-      <footer></footer>
+      <Footer />
     </>
   )
 }
