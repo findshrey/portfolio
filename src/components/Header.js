@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Backdrop from './Backdrop/Backdrop'
+import Backdrop from './utilities/Backdrop'
 import { svgGithub, svgLinkedin, svgEmail } from './../data/svg-icons'
 
 const Header = () => {
