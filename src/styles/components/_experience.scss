@@ -3,50 +3,74 @@
    padding: $section-padding;
 }
 
-// .work li {
-//    position: relative;
-//    width: 6px;
-//    background: #000;
-//    padding-bottom: 3rem;
-// }
-.timeline {
-   position: relative;
+.experience-wrapper {
+   display: flex;
+   justify-content: space-around;
 }
 
-.work {
+.education {
+   margin-left: 2rem;
+}
+
+.timeline-content {
+   position: relative;
+   padding: 3rem 0;
+
    &::before {
       content: '';
-      // display: inline-block;
+      display: inline-block;
       position: absolute;
+      top: 0;
+      left: 0;
       width: 10px;
       height: 100%;
-      background: red;
-   
-      //  left: 0;
-      //  top: 0;
-      //  border: 3px solid #3a4a5d;
-      //  border-radius: 5px;   
+      background: $c-pink;
+      border-radius: 5px;   
+      border: 3px solid darken($c-pink, 10%);
    }
 
    li {
-      // padding-left: 2rem;
-      padding: 3rem 0 3rem 3rem;
-      // margin-bottom: 3rem;
+      padding-left: 30px;
+      margin-bottom: 3rem;
+      position: relative;
 
-      h4 {
+      &:last-child {
+         margin-bottom: 0;
+      }
 
-         &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            border: 3px solid #1894ff;
-            transform: rotate(45deg);
-            left: -2px;
-         }
+      &::after {
+         content: '';
+         position: absolute;
+         top: 50%;
+         left: 0;
+         width: 20px;
+         height: 20px;
+         transform: translate(-25%, -50%) rotate(45deg);
+         border: 5px solid darken($c-pink, 15%);
+         // border-radius: 50%;
       }
    }
-
 }
 
+.timeline-title {
+   position: relative;
+   margin-bottom: 2rem;
+
+   h4 {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 1rem;
+      text-transform: uppercase;
+      font-size: $font-l;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+   }
+}
+
+.title-icon {
+   position: relative;
+   left: -10px;
+   font-size: 30px;
+   vertical-align: middle;
+   color: darken($c-pink, 10%);
+}

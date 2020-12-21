@@ -13,7 +13,7 @@ const PortfolioApp = () => {
       <Header />
       <main>
         <Hero />
-        <Projects />
+        {/* <Projects /> */}
         <Divider />
         <About />
         <Experience />
