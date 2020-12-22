@@ -15,22 +15,28 @@ const Experience = () => {
                   </div>
                   <ul className="timeline-content">
                      <li>
-                        <h4>2010-2012</h4>
-                        <p>delhi</p>
-                        <p>student</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, delectus.</p>
+                        <h5 className="timeline-date">2010-2012</h5>
+                        <div className="timeline-info">
+                           <p>Company/ School name</p>
+                           <p>position</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, delectus.</p>
+                        </div>
                      </li>
                      <li>
-                        <h4>2010-2012</h4>
-                        <p>delhi</p>
-                        <p>student</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, delectus.</p>
+                        <h5 className="timeline-date">2010-2012</h5>
+                        <div className="timeline-info">
+                           <p>Company/ School name</p>
+                           <p>position</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, delectus.</p>
+                        </div>
                      </li>
                      <li>
-                        <h4>2010-2012</h4>
-                        <p>delhi</p>
-                        <p>student</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, delectus.</p>
+                        <h5 className="timeline-date">2010-2012</h5>
+                        <div className="timeline-info">
+                           <p>Company/ School name</p>
+                           <p>position</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, delectus.</p>
+                        </div>
                      </li>
                   </ul>
                </div>
@@ -41,22 +47,28 @@ const Experience = () => {
                   </div>
                   <ul className="timeline-content">
                      <li>
-                        <h4>2010-2012</h4>
-                        <p>delhi</p>
-                        <p>student</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, delectus.</p>
+                        <h5 className="timeline-date">2010-2012</h5>
+                        <div className="timeline-info">
+                           <p>Company/ School name</p>
+                           <p>position</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, delectus.</p>
+                        </div>
                      </li>
                      <li>
-                        <h4>2010-2012</h4>
-                        <p>delhi</p>
-                        <p>student</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, delectus.</p>
+                        <h5 className="timeline-date">2010-2012</h5>
+                        <div className="timeline-info">
+                           <p>Company/ School name</p>
+                           <p>position</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, delectus.</p>
+                        </div>
                      </li>
                      <li>
-                        <h4>2010-2012</h4>
-                        <p>delhi</p>
-                        <p>student</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, delectus.</p>
+                        <h5 className="timeline-date">2010-2012</h5>
+                        <div className="timeline-info">
+                           <p>Company/ School name</p>
+                           <p>position</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, delectus.</p>
+                        </div>
                      </li>
                   </ul>
                </div>
