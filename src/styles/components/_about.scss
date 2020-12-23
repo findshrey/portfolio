@@ -4,12 +4,39 @@
 }
 
 .about-inner {
-   display: flex;
    color: $c-white;
+   display: flex;
 }
 
 .about-image {
    flex: 1 1 40%;
+}
+
+#dev {
+   animation: productivity 1.5s infinite alternate;
+   transform-origin: bottom;
+}
+
+#clock-hand {
+   animation: clock 2s infinite linear;
+   transform-box: fill-box;
+   transform-origin: bottom;
+}
+
+@keyframes productivity {
+   from {
+      transform: rotateZ(-4deg);
+   }
+
+   to {
+      transform: rotateZ(4deg);
+   }
+}
+
+@keyframes clock {
+   100% {
+      transform: rotate(360deg);
+   }
 }
 
 .about-content {
@@ -17,10 +44,33 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
-   padding: 0 5rem;
+   padding-left: 5rem;
 
-   p:nth-of-type(1) {
-      margin-bottom: 2rem;
+   p {
+      margin-bottom: 1.5rem;
+   }
+}
+
+.skillset {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   row-gap: 0.3rem;
+
+   li {
+      position: relative;
+      font-size: $font-m;
+      padding-left: 20px;
+
+      &::before {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 50%;
+         height: 8px;
+         width: 8px;
+         background: darken($c-pink, 10%);
+         transform: translateY(-50%) rotate(45deg);
+      }
    }
 }
 
@@ -30,7 +80,7 @@
    }
 
    .about-content {
-      padding: 0;
+      padding-left: 0;
       margin-bottom: 5rem;
    }
 }
