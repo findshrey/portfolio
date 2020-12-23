@@ -4,7 +4,7 @@ const Hero = () => {
    return (
       <section id="home" className="hero">
          <div className="container">
-            <div className="hero-intro">
+            <div className="hero-inner">
                <div className="hero-text">
                   <span>Hi, my name is</span>
                   <h1>Shrey Sharma.</h1>

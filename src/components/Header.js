@@ -1,6 +1,6 @@
 import { useState } from 'react'
+import { svgGithub, svgLinkedin, svgEmail } from '../data/svg-icons'
 import Backdrop from './utilities/Backdrop'
-import { svgGithub, svgLinkedin, svgEmail } from './../data/svg-icons'
 
 const Header = () => {
    const [sideDrawer, setSideDrawer] = useState(false)
@@ -19,6 +19,7 @@ const Header = () => {
       backdrop = <Backdrop click={handleBackdrop} />
    }
 
+   // Navigation links
    const navOptions = ['home', 'projects', 'about', 'experience', 'contact']
 
    return (

@@ -1,48 +1,37 @@
 .hero {
    background: radial-gradient($c-matte-black, darken($c-matte-black, 10%));
-   height: 100vh;
    color: darken($c-white, 5%);
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
 
-   .container {
-      height: 100%;
-   }
-
-   &-intro {
-      height: 100%;
+   &-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-   }
-   
-   &-text {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-   }
 
-   h1 {
-      background: $c-gradient;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      line-height: 1.4;
-   }
+      h1 {
+         background: $c-gradient;
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+         line-height: 1.4;
+      }
 
-   h2 {
-      margin-top: 1rem;
-      line-height: 1.4;
-   }
+      h2 {
+         margin-top: 1rem;
+         line-height: 1.4;
+      }
 
-   span {
-      font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem);
-      margin-left: 5px;
-   }
+      span {
+         font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem);
+         margin-left: 5px;
+      }
 
-   p {
-      font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem);
-      margin: 3rem 0 5rem 0;
-      max-width: 70rem;
+      p {
+         font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem);
+         margin: 3rem 0 5rem 0;
+         max-width: 60rem;
+      }
    }
 }
 
@@ -66,14 +55,12 @@
    }
 }
 
-// Tablets
 @media (max-width: 800px) {
    #thinking {
       display: none;
    }
 }
 
-// Smartphones
 @media (max-width: 500px) {
    .hero {
       h1, h2 {

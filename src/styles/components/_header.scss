@@ -1,24 +1,24 @@
 .hamburger {
+   background: transparent;
+   border: none;
+   cursor: pointer;
+   mix-blend-mode: difference;
    position: fixed;
    top: 0;
    left: 0;
    margin: 15px 0 0 15px;
    z-index: 100;
-   background: transparent;
-   border: none;
-   cursor: pointer;
-   mix-blend-mode: difference;
 
    &:focus {
       outline: none;
    }
 
    & div {
-      width: 25px;
-      height: 2.5px;
-      display: block;
-      margin: 5px auto;
       background: $c-white;
+      display: block;
+      height: 2.5px;
+      width: 25px;
+      margin: 5px auto;
 
       &:nth-of-type(2) {
          width: 35px;
@@ -33,7 +33,7 @@
    left: 0;
    height: 100%;
    width: 45%;
-   z-index: 99;
+   z-index: 95;
    transform: translateX(-100%);
    transition: all 0.4s ease-in-out;
 
@@ -42,11 +42,11 @@
    }
 
    ul {
-      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      height: 100%;
 
       li {
          margin: 2rem 0;
@@ -55,18 +55,17 @@
 }
 
 .external {
+   display: flex;
+   mix-blend-mode: difference;
    position: fixed;
    top: 0;
    right: 0;
+   z-index: 85;
    margin: 15px 15px 0 0;
-   z-index: 97;
-   mix-blend-mode: difference;
-   display: flex;
 
    & a {
       fill: $c-white;
       margin-left: 15px;
-      // mix-blend-mode: difference;
    }
 }
 
@@ -76,4 +75,4 @@
    }
 }
 
-// Hamburger -> Drawer -> Backdrop -> Externals [Z-index priority]
+// Z-index priority : Hamburger -> Drawer -> Backdrop -> Externals 

@@ -36,7 +36,7 @@ const Projects = () => {
                <div className="project">
                   <div className="project-image">
                      <a href="https://www.google.com/" target="_blank">
-                        <img src="/project2.jpg" alt="" />
+                        <img src="/photography.png" alt="" />
                      </a>
                   </div>
                   <div className="project-content">
