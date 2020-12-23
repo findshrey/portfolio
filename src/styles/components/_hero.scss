@@ -1,7 +1,9 @@
 .hero {
    background: radial-gradient($c-matte-black, darken($c-matte-black, 10%));
-   color: darken($c-white, 5%);
+   color: darken($c-white, 10%);
    min-height: 100vh;
+   padding: $section-padding;
+   
    display: flex;
    align-items: center;
 
@@ -18,20 +20,21 @@
       }
 
       h2 {
-         margin-top: 1rem;
          line-height: 1.4;
       }
 
       span {
-         font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem);
          margin-left: 5px;
       }
 
       p {
-         font-size: clamp(1.5rem, calc(1rem + 0.75vw), 3rem);
          margin: 3rem 0 5rem 0;
          max-width: 60rem;
       }
+   }
+
+   &-text {
+      margin-right: 1rem;
    }
 }
 
@@ -41,9 +44,14 @@
    }
 }
 
-#box1, #box2, #box3,
-#outline1, #outline2, #outline3 {
-   animation: spin 4s linear infinite;
+#task1, #task2, #task3, #task4, #task5 {
+   animation: spin 5s linear infinite;
+   transform-box: fill-box;
+   transform-origin: center;
+}
+
+#path {
+   animation: spin 10s linear infinite;
    transform-box: fill-box;
    transform-origin: center;
 }
@@ -56,7 +64,7 @@
 }
 
 @media (max-width: 800px) {
-   #thinking {
+   #product-iteration {
       display: none;
    }
 }

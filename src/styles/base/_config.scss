@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 // Fonts
-$font-primary: 'PT Sans', sans-serif;
+$font-primary: 'Lato', sans-serif;
 
 // Header(Tag) sizes
-$header1: clamp(4rem, calc(3.5rem + 2vw), 7rem);   // calc(3rem + 1.5vw)
-$header2: clamp(4rem, calc(3.5rem + 2vw), 7rem);   //calc(2rem + 1vw)
-$header3: clamp(3rem, calc(2.5rem + 1vw), 5rem);;   // calc(1.5rem + 1vw)
-$header4: clamp(1.8rem, calc(1.5rem + 1vw), 3rem);   // calc(1rem + 0.75vw)
+$header1: clamp(4rem, calc(3rem + 2.25vw), 6rem);
+$header2: clamp(4rem, calc(3rem + 2.25vw), 6rem);
+$header3: clamp(3rem, calc(2.5rem + 1vw), 5rem);
+$header4: clamp(1.8rem, calc(1.5rem + 1vw), 3rem);
 
 // Text sizes
 $font-l: clamp(2rem, calc(1.5rem + 0.75vw), 2.4rem);
-$font-m: clamp(1.3rem, calc(1rem + 0.75vw), 1.9rem);   // calc(1rem + 0.5vw)
-$font-s: clamp(1.2rem, calc(1rem + 0.5vw), 1.5rem);
+$font-m: clamp(1.5rem, calc(1rem + 0.75vw), 2rem);
+$font-s: clamp(1.3rem, calc(1rem + 0.5vw), 1.8rem);
 
 // Colors
 $c-white: #fff;
 $c-matte-black: #252525;
 $c-pink: #e91e63;
-$c-gradient: linear-gradient(to right,#e91e63,  #e91eb6);
+$c-gradient: linear-gradient(to right,#e91e63,  #e91ec7);
 
 // Section padding
 $section-padding: calc(6rem + 1vw) 0;

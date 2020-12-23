@@ -1,4 +1,4 @@
-import svgThinking from '../data/svg-thinking'
+import svgProfessional from '../data/svg-professional'
 
 const Hero = () => {
    return (
@@ -20,7 +20,7 @@ const Hero = () => {
                   </div>
                </div>
                {
-                  svgThinking
+                  svgProfessional
                }
             </div>
          </div>
