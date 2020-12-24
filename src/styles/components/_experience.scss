@@ -17,7 +17,6 @@
 }
 
 .timeline-title {
-   // position: relative;
    margin-bottom: 3rem;
 
    h4 {
@@ -71,8 +70,8 @@
          position: absolute;
          top: 50%;
          left: -25px;
-         width: 20px;
          height: 20px;
+         width: 20px;
          transform: translate(-25%, -50%) rotate(45deg);
          border: 5px solid darken($c-pink, 10%);
       }

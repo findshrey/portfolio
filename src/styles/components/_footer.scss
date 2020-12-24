@@ -1,8 +1,13 @@
 .footer {
    background: $c-matte-black;
-   color: $c-white;
+   color: darken($c-white, 10%);
    display: flex;
    flex-direction: column;
    align-items: center;
    padding: 3rem 0;
+
+   div {
+      font-size: $font-s;
+      letter-spacing: 1px;
+   }
 }

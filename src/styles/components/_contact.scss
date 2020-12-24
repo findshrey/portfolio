@@ -13,25 +13,25 @@
 
    &-input {
       font-size: $font-s;
-      text-transform: uppercase;
-      letter-spacing: 1px;
       font-weight: 700;
+      letter-spacing: 1px;
       margin-bottom: 20px;
+      text-transform: uppercase;
       
       label {
          display: block;
       }
 
       input {
+         background: darken($c-white, 10%);
+         border: none;
+         border-radius: 3px;
+         color: $c-matte-black;
+         font-family: $font-primary;
+         font-size: $font-s;
          display: block;
          width: 100%;
          padding: 15px;
-         border: none;
-         border-radius: 3px;
-         background: darken($c-white, 10%);
-         font-family: $font-primary;
-         font-size: $font-s;
-         color: $c-matte-black;
 
          &:focus {
             outline: none;
@@ -39,15 +39,15 @@
       }
 
       textarea {
+         background: darken($c-white, 10%);
+         border: none;
+         border-radius: 3px;
+         color: $c-matte-black;
+         font-family: $font-primary;
+         font-size: $font-s;
          display: block;
          width: 100%;
          padding: 1.5rem;
-         background: darken($c-white, 10%);
-         font-family: $font-primary;
-         font-size: $font-s;
-         color: $c-matte-black;
-         border: none;
-         border-radius: 3px;
          resize: none;
 
          &:focus {
@@ -57,11 +57,11 @@
    }
 
    button {
-      width: 100%;
-      padding: 1.5rem 0;
       font-size: $font-s;
-      text-transform: uppercase;
-      letter-spacing: 1px;
       font-weight: 700;
+      letter-spacing: 1px;
+      padding: 1.5rem 0;
+      text-transform: uppercase;
+      width: 100%;
    }
 }
