@@ -6,6 +6,7 @@
 .about-inner {
    color: $c-white;
    display: flex;
+   align-items: center;
 }
 
 .about-image {
@@ -77,6 +78,7 @@
 @media (max-width: 800px) {
    .about-inner {
       flex-direction: column-reverse;
+      align-items: stretch;
    }
 
    .about-content {

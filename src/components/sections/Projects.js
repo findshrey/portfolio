@@ -1,4 +1,4 @@
-import { svgGithub, svgLink } from './../data/svg-icons'
+import { IconGithub, IconLink } from '../svg/Icons'
 
 const Projects = () => {
    return (
@@ -24,10 +24,10 @@ const Projects = () => {
                      </ul>
                      <div className="project-links">
                         <a href="https://www.google.com/" target="_blank">
-                           {svgGithub}
+                           <IconGithub />
                         </a>
                         <a href="https://www.google.com/" target="_blank">
-                           {svgLink}
+                           <IconLink />
                         </a>
                      </div>
                   </div>
@@ -49,10 +49,10 @@ const Projects = () => {
                      </ul>
                      <div className="project-links">
                         <a href="https://www.google.com/" target="_blank">
-                           {svgGithub}
+                           <IconGithub />
                         </a>
                         <a href="https://www.google.com/" target="_blank">
-                           {svgLink}
+                           <IconLink />
                         </a>
                      </div>
                   </div>

@@ -1,19 +1,27 @@
+import Head from 'next/head'
 import Header from './../components/Header'
-import Hero from '../components/Hero'
-import Projects from '../components/Projects'
-import Divider from '../components/utilities/divider'
-import About from '../components/About'
-import Experience from '../components/Experience'
-import Contact from '../components/Contact'
+import Hero from '../components/sections/Hero'
+import Projects from '../components/sections/Projects'
+import Divider from '../components/Divider'
+import About from '../components/sections/About'
+import Experience from '../components/sections/Experience'
+import Contact from '../components/sections/Contact'
 import Footer from '../components/Footer'
 
 const PortfolioApp = () => {
   return (
     <>
+      <Head>
+        {/* <meta name="description"
+          content="A taste of real Italy in Brooklyn from Chef Gerard Craft, featuring fresh pastas and wood-fired pizzas in a casual, family-friendly environment." />
+        <meta name="robots" content="index, follow" /> */}
+        {/* <link rel="icon" type="image/png" href="./images/favicon.png"/> */}
+        <title>Shrey Sharma | Front End Developer</title>
+      </Head>
       <Header />
       <main>
         <Hero />
-        {/* <Projects /> */}
+        <Projects />
         <Divider />
         <About />
         <Experience />

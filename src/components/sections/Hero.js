@@ -1,4 +1,4 @@
-import svgProfessional from '../data/svg-professional'
+import Professional from '../svg/Professional'
 
 const Hero = () => (
    <section id="home" className="hero">
@@ -14,13 +14,11 @@ const Hero = () => (
                   applications, and everything in between.
                </p>
                <div className="call-to-action">
-                  <a href="" className="btn-pink">Projects</a>
-                  <a href="" className="btn-pink">Contact</a>
+                  <a href="#projects" className="btn-pink">Projects</a>
+                  <a href="#contact" className="btn-pink">Contact</a>
                </div>
             </div>
-            {
-               svgProfessional
-            }
+            <Professional />
          </div>
       </div>
    </section>

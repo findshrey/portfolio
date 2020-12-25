@@ -1,4 +1,4 @@
-import svgDev from '../data/svg-dev'
+import DevProductivity from '../svg/DevProductivity'
 
 const About = () => (
    <section id="about" className="about">
@@ -8,7 +8,7 @@ const About = () => (
          </header>
          <div className="about-inner">
             <div className="about-image">
-               {svgDev}
+               <DevProductivity />
             </div>
             <div className="about-content">
                <p>

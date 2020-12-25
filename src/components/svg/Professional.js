@@ -1,4 +1,4 @@
-const svgProfessional = (
+const Professional = () => (
    <svg id="professional" width="410" height="589" viewBox="0 0 410 589" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g>
          <g id="task-list">
@@ -66,4 +66,4 @@ const svgProfessional = (
    </svg>
 )
 
-export default svgProfessional
+export default Professional

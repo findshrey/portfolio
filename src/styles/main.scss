@@ -4,12 +4,13 @@
 @import './base/global';
 
 // Components
-@import './components/backdrop';
+@import './components/sections/hero';
+@import './components/sections/projects';
+@import './components/sections/about';
+@import './components/sections/experience';
+@import './components/sections/contact';
+
 @import './components/header';
-@import './components/hero';
-@import './components/projects';
+@import './components/backdrop';
 @import './components/divider';
-@import './components/about';
-@import './components/contact';
 @import './components/footer';
-@import './components/experience';

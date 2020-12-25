@@ -1,4 +1,4 @@
-const svgDev = (
+const DevProductivity = () => (
    <svg viewBox="0 0 799 690" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g id="dev-productivity">
          <g id="dev">
@@ -36,4 +36,4 @@ const svgDev = (
    </svg>
 )
 
-export default svgDev
+export default DevProductivity

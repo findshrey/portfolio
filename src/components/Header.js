@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { svgGithub, svgLinkedin, svgEmail } from '../data/svg-icons'
-import Backdrop from './utilities/Backdrop'
+import { IconGithub, IconLinkedin, IconEmail } from './svg/Icons'
+import Backdrop from './Backdrop'
 
 const Header = () => {
    const [sideDrawer, setSideDrawer] = useState(false)
@@ -47,13 +47,13 @@ const Header = () => {
          </nav>
          <div className="external">
             <a href="https://github.com/findshrey" title="Github" target="_blank">
-               {svgGithub}
+               <IconGithub />
             </a>
             <a href="https://www.linkedin.com/in/findshrey/" title="Linkedin" target="_blank">
-               {svgLinkedin}
+               <IconLinkedin />
             </a>
             <a href="mailto:shrey9april@gmail.com" title="Email" target="_blank">
-               {svgEmail}
+               <IconEmail />
             </a>
          </div>
       </header>
