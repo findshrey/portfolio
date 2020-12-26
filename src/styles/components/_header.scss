@@ -13,16 +13,29 @@
       outline: none;
    }
 
-   & div {
+   .line-one,
+   .line-two,
+   .line-three {
       background: $c-white;
-      display: block;
       height: 2.5px;
-      width: 25px;
-      margin: 5px auto;
+      width: 24px;
+      margin: 5.5px auto;
+      transition: all 0.2s ease-in-out;
+   }
 
-      &:nth-of-type(2) {
-         width: 35px;
-      }
+   .line-two {
+      width: 34px;
+   }
+}
+
+.hamburger.active {
+   .line-one {
+      transform: translateX(10px);
+   }
+
+   .line-two {
+      transform: translateX(5px);
+      width: 24px;
    }
 }
 

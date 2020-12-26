@@ -11,10 +11,12 @@ const Header = () => {
    // Remove backdrop and hide sideDrawer
    const handleBackdrop = () => setSideDrawer(false)
 
+   let hamClass = 'hamburger'
    let navClass = 'navigation'
    let backdrop
 
    if (sideDrawer) {
+      hamClass = 'hamburger active'
       navClass = 'navigation active'
       backdrop = <Backdrop click={handleBackdrop} />
    }
@@ -24,13 +26,10 @@ const Header = () => {
 
    return (
       <header>
-         {
-            backdrop
-         }
-         <button className="hamburger" onClick={handleSideDrawer}>
-            <div></div>
-            <div></div>
-            <div></div>
+         <button className={hamClass} onClick={handleSideDrawer}>
+            <div className="line-one"></div>
+            <div className="line-two"></div>
+            <div className="line-three"></div>
          </button>
          <nav className={navClass}>
             <ul>
@@ -45,6 +44,9 @@ const Header = () => {
                }
             </ul>
          </nav>
+         {
+            backdrop
+         }
          <div className="external">
             <a href="https://github.com/findshrey" title="Github" target="_blank">
                <IconGithub />
