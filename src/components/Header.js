@@ -36,7 +36,7 @@ const Header = () => {
                {
                   navOptions.map((option, index) =>
                      <li key={index}>
-                        <a href={`#${option}`} onClick={handleSideDrawer}>
+                        <a href={`#${option}`} className="nav-link" onClick={handleSideDrawer}>
                            {option}
                         </a>
                      </li>

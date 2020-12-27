@@ -67,6 +67,28 @@
    }
 }
 
+.nav-link {
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   position: relative;
+
+   &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 4px;
+      width: 0;
+      transform: translateY(-50%);
+      transition: width 0.4s cubic-bezier(1, 0, 0, 1);
+      background: $c-pink;
+   }
+
+   &:hover::after {
+      width: 100%;
+   }
+}
+
 .external {
    display: flex;
    mix-blend-mode: difference;
