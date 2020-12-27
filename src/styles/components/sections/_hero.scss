@@ -14,46 +14,59 @@
    justify-content: space-between;
 }
 
+//  Fade-in animation
+@keyframes fadeIn {
+   from {
+      transform: translateY(20px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+}
+
+@mixin animateText ($delay) {
+   opacity: 0;
+   animation: fadeIn 0.5s ease-in-out forwards $delay;
+}
+
 .hero-text {
    margin-right: 1rem;
+
+   span {
+      display: inline-block;
+      margin-left: 5px;
+      @include animateText(2.2s);
+   }
 
    h1 {
       background: $c-gradient;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       line-height: 1.4;
+      @include animateText(2.3s);
    }
 
    h2 {
       line-height: 1.4;
-   }
-
-   span {
-      margin-left: 5px;
+      @include animateText(2.4s);
    }
 
    p {
+      letter-spacing: 0.5px;
       margin: 3rem 0 5rem 0;
       max-width: 60rem;
+      @include animateText(2.5s);
    }
 }
 
 .call-to-action {
+   @include animateText(2.6s);
+   
    a:nth-of-type(1) {
       margin-right: 2.5rem;
    }
-}
-
-#task1, #task2, #task3, #task4, #task5 {
-   animation: spin 5s linear infinite;
-   transform-box: fill-box;
-   transform-origin: center;
-}
-
-#path {
-   animation: spin 10s linear infinite;
-   transform-box: fill-box;
-   transform-origin: center;
 }
 
 // Spinning animation
@@ -63,14 +76,62 @@
    }
 }
 
+// Opacity animation
+@keyframes visibility {
+   100% {
+      opacity: 1;
+   }
+}
+
+#person {
+   opacity: 0;
+   animation: visibility 0.5s ease-in-out forwards 0.6s;
+}
+
+#task1,
+#task2,
+#task3,
+#task4,
+#task5 {
+   opacity: 0;
+   animation: visibility 0.5s ease-in-out forwards 1.3s;
+}
+
+#path {
+   opacity: 0;
+   animation: visibility 0.5s ease-in-out forwards 3.2s, // 1.3s
+      spin 10s linear infinite 3.7s;
+   transform-box: fill-box;
+   transform-origin: center;
+}
+
 @media (max-width: 800px) {
-   // Hides svg
    #professional {
       display: none;
    }
 
    .hero-text {
       margin-right: 0;
+      
+      span {
+         @include animateText(0.5s);
+      }
+
+      h1 {
+         @include animateText(0.6s);
+      }
+
+      h2 {
+         @include animateText(0.7s);
+      }
+
+      p {
+         @include animateText(0.8s);
+      }
+   }
+
+   .call-to-action {
+      @include animateText(0.9s);
    }
 }
 

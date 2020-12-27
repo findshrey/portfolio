@@ -15,13 +15,13 @@ const PortfolioApp = () => {
         {/* <meta name="description"
           content="A taste of real Italy in Brooklyn from Chef Gerard Craft, featuring fresh pastas and wood-fired pizzas in a casual, family-friendly environment." />
         <meta name="robots" content="index, follow" /> */}
-        {/* <link rel="icon" type="image/png" href="./images/favicon.png"/> */}
+        <link rel="icon" type="image/png" href="/favicon.png" />
         <title>Shrey Sharma | Front End Developer</title>
       </Head>
       <Header />
       <main>
         <Hero />
-        <Projects />
+        {/* <Projects /> */}
         <Divider />
         <About />
         <Experience />
