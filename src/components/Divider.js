@@ -1,6 +1,6 @@
 const Divider = () => (
    <section className="divider">
-      <img src="/responsive.svg" alt="" />
+      <img src="/img/responsive.svg" alt="" />
    </section>
 )
 
