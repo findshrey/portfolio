@@ -6,6 +6,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-top: 50px;
 
    img {
       // box-shadow: 0 0 10px rgba(#000, 0.4);
@@ -37,6 +38,7 @@
 @media (max-width: 500px) {
    .divider {
       min-height: 220px;
+      margin-top: 0;
 
       img {
          bottom: auto;

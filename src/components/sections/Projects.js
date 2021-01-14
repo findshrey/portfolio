@@ -24,7 +24,7 @@ const Projects = () => {
                   </div>
                   <div className="project-content">
                      <h4>Emma Earl</h4>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, consequuntur?</p>
+                     <p>A multipage photo gallery website i designed and built. Hosts over 100 images.</p>
                      <ul className="project-tech-list">
                         <li>Javascript</li>
                         <li>CSS3</li>
@@ -56,7 +56,7 @@ const Projects = () => {
                   </div>
                   <div className="project-content">
                      <h4>La Casetta</h4>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, consequuntur?</p>
+                     <p>A single page restaurant web app focused on italian cuisine</p>
                      <ul className="project-tech-list">
                         <li>ReactJS</li>
                         <li>SCSS</li>

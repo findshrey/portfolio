@@ -21,4 +21,4 @@ $c-pink: #e91e63;
 $c-gradient: linear-gradient(to right,#e91e63,  #e91ec7);
 
 // Section padding
-$section-padding: calc(6rem + 1vw) 0;
+$section-padding: clamp(5rem, calc(4rem + 2vw), 8rem) 0;
