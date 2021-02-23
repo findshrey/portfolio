@@ -1,9 +1,24 @@
+import { useState, useEffect } from 'react'
 import { Image, CloudinaryContext } from 'cloudinary-react'
 import { IconGithub, IconLink } from '../svg/Icons'
 
-import projectsToShow from './../../data/projects-to-show'
+import firebase from './../../firebase'
 
 const Projects = () => {
+   const [projects, setProjects] = useState([])
+
+   useEffect(() => {
+      let data = []
+
+      firebase.firestore().collection('projects').get().then((snapshot) => {
+         snapshot.docs.forEach((doc) => {
+            data = [...data, doc.data()]
+         })
+
+         setProjects(data)
+      })
+   }, [])
+
    return (
       <section id="projects" className="projects">
          <div className="container">
@@ -12,7 +27,7 @@ const Projects = () => {
             </header>
             <CloudinaryContext cloudName="dg4arvkpw" className="projects-wrapper">
                {
-                  projectsToShow.map((project) => (
+                  projects.map((project) => (
                      <div key={project.name} className="project">
                         <div className="project-image">
                            <a href={project.link} target="_blank">
@@ -26,7 +41,7 @@ const Projects = () => {
                         </div>
                         <div className="project-content">
                            <h4>{project.name}</h4>
-                           <p>{project.about}</p>
+                           <p>{project.description}</p>
                            <ul className="project-tech-list">
                               {
                                  project.techList.map((tech, index) => (

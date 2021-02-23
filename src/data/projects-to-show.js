@@ -1,7 +1,7 @@
 const projectsToShow = [
    {
       name: 'Emma Earl',
-      about: 'A multipage photo gallery website i designed and built. Hosts over 100 images.',
+      description: 'A multipage photo gallery website i designed and built. Hosts over 100 images.',
       techList: ['JavaScript', 'CSS3', 'HTML5'],
       image: {
          id: 'portfolio/projects/emma-earl_cznfli.png',
@@ -13,7 +13,7 @@ const projectsToShow = [
    },
    {
       name: 'La Casetta',
-      about: 'A single page restaurant web app focused on italian cuisine.',
+      description: 'A single page restaurant web app focused on italian cuisine.',
       techList: ['ReactJS', 'SCSS', 'HTML5'],
       image: {
          id: 'portfolio/projects/la-casetta_uvq8xt.png',
