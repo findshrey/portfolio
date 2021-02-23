@@ -3,11 +3,11 @@
 // Fonts
 $font-primary: 'Lato', sans-serif;
 
-// Header(Tag) sizes
-$header1: clamp(4rem, calc(3rem + 2.25vw), 6rem);
-$header2: clamp(4rem, calc(3rem + 2.25vw), 6rem);
-$header3: clamp(3rem, calc(2.5rem + 1vw), 5rem);
-$header4: clamp(1.8rem, calc(1.5rem + 1vw), 3rem);
+// Header sizes
+$h1: clamp(4rem, calc(3rem + 2.25vw), 6rem);
+$h2: clamp(4rem, calc(3rem + 2.25vw), 6rem);
+$h3: clamp(3rem, calc(2.5rem + 1vw), 5rem);
+$h4: clamp(1.8rem, calc(1.5rem + 1vw), 3rem);
 
 // Text sizes
 // $font-l: clamp(1.8rem, calc(1.5rem + 0.75vw), 2.2rem);
@@ -15,10 +15,10 @@ $font-m: clamp(1.5rem, calc(1rem + 0.75vw), 1.8rem);
 $font-s: 1.5rem;
 
 // Colors
-$c-white: #fff;
-$c-matte-black: #252525;
+$c-black-matte: #252525;
+$c-gradient: linear-gradient(to right,#e91e63, #e91ec7);
 $c-pink: #e91e63;
-$c-gradient: linear-gradient(to right,#e91e63,  #e91ec7);
+$c-white: #fff;
 
-// Section padding
-$section-padding: clamp(5rem, calc(4rem + 2vw), 8rem) 0;
+// Paddings & Margins
+$padding-section: clamp(5rem, calc(4rem + 2vw), 8rem) 0;

@@ -1,5 +1,5 @@
 .hamburger {
-   background: transparent;
+   background-color: transparent;
    border: none;
    cursor: pointer;
    mix-blend-mode: difference;
@@ -8,10 +8,6 @@
    left: 0;
    margin: 15px 0 0 15px;
    z-index: 100;
-
-   &:focus {
-      outline: none;
-   }
 
    .line-one,
    .line-two,
@@ -68,12 +64,11 @@
 }
 
 .nav-link {
-   text-transform: uppercase;
-   letter-spacing: 0.5px;
    position: relative;
 
    &::after {
       content: "";
+      background: $c-pink;
       position: absolute;
       top: 50%;
       left: 0;
@@ -81,7 +76,6 @@
       width: 0;
       transform: translateY(-50%);
       transition: width 0.4s cubic-bezier(1, 0, 0, 1);
-      background: $c-pink;
       opacity: 0.9;
    }
 

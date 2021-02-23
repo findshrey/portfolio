@@ -1,5 +1,5 @@
 .projects {
-   padding: $section-padding;
+   padding: $padding-section;
 }
 
 .projects-wrapper {
@@ -36,7 +36,7 @@
 
    p {
       margin: 1rem 0 2rem 0;
-      color: lighten($c-matte-black, 25%);
+      color: lighten($c-black-matte, 25%);
       max-width: 500px;
    }
 

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import Header from './../components/Header'
 import Hero from '../components/sections/Hero'
 import Projects from '../components/sections/Projects'

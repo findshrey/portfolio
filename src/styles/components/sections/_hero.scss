@@ -1,8 +1,8 @@
 .hero {
-   background: radial-gradient($c-matte-black, darken($c-matte-black, 10%));
+   background: radial-gradient($c-black-matte, darken($c-black-matte, 10%));
    color: darken($c-white, 10%);
    min-height: 100vh;
-   padding: $section-padding;
+   padding: $padding-section;
    
    display: flex;
    align-items: center;

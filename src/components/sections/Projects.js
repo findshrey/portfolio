@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Image, CloudinaryContext } from 'cloudinary-react'
-import { IconGithub, IconLink } from '../svg/Icons'
 
 import firebase from './../../firebase'
+import IconGithub from './../icons/IconGithub'
+import IconLink from './../icons/IconLink'
 
 const Projects = () => {
    const [projects, setProjects] = useState([])

@@ -1,5 +1,4 @@
 // Global Styles
-
 *, *::before, *::after {
    margin: 0;
    padding: 0;
@@ -12,34 +11,34 @@
 }
 
 html {
+   background: $c-white;
    font-size: 62.5%;
    scroll-behavior: smooth;
-   background: $c-white;
 }
  
 body {
    background: $c-white;
-   color: $c-matte-black;
+   color: $c-black-matte;
    font-family: $font-primary;
    line-height: 1.6;
 }
 
 h1 {
-   font-size: $header1;
+   font-size: $h1;
 }
 h2 {
-   font-size: $header2;
+   font-size: $h2;
 }
 h3 {
-   font-size: $header3;
+   font-size: $h3;
 }
 h4 {
-   font-size: $header4;
+   font-size: $h4;
    font-weight: 400;
 }
 
-div, span, p, a, li, button {
-   font-size: $font-m; //clamp(1.5rem, calc(1rem + 0.75vw), 3rem)
+div, span, p, a, li, button, label, input {
+   font-size: $font-m;
 }
 
 ul {
@@ -47,14 +46,18 @@ ul {
 }
 
 a {
-   /* color: var($c-matte-black); */
    color: inherit;
    text-decoration: none;
 }
 
 button {
    color: inherit;
+   cursor: pointer;
    font-family: inherit;
+
+   &:focus {
+      outline: none;
+   }
 }
 
 img {

@@ -1,8 +1,23 @@
+import { useState, useEffect } from 'react'
 import * as FaIcons from 'react-icons/fa'
 
-import experience from './../../data/experience-history'
+import firebase from './../../firebase'
 
 const Experience = () => {
+   const [experience, setExperience] = useState({})
+
+   useEffect(() => {
+      let data = {}
+
+      firebase.firestore().collection('experience').get().then((snapshot) => {
+         snapshot.docs.forEach((doc) => {
+            data = { ...data, ...doc.data() }
+         })
+
+         setExperience(data)
+      })
+   }, [])
+
    return (
       <section id="experience" className="experience">
          <div className="container">
@@ -17,8 +32,8 @@ const Experience = () => {
                   </div>
                   <ul className="timeline-content">
                      {
-                        experience.workHistory.map((work) => (
-                           <li>
+                        experience?.workHistory?.map((work, index) => (
+                           <li key={index}>
                               <span className="timeline-date">{work.date}</span>
                               <div className="timeline-info">
                                  <div className="timeline-info-head">
@@ -41,8 +56,8 @@ const Experience = () => {
                   </div>
                   <ul className="timeline-content">
                      {
-                        experience.education.map((edu) => (
-                           <li>
+                        experience?.education?.map((edu, index) => (
+                           <li key={index}>
                               <span className="timeline-date">{edu.date}</span>
                               <div className="timeline-info">
                                  <div className="timeline-info-head">

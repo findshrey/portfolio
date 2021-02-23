@@ -1,5 +1,4 @@
 // Utility Classes and Mixins
-
 .container {
    width: 90%;
    max-width: 1280px;
@@ -64,10 +63,10 @@
 
    &-black {
       @extend %head-common;
-      color: $c-matte-black;
+      color: $c-black-matte;
 
       h3:after {
-         background: $c-matte-black;
+         background: $c-black-matte;
       }
    }
 }

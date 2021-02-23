@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { IconGithub, IconLinkedin, IconEmail } from './svg/Icons'
+
+import { NAV_LINKS, EXTERNAL_LINKS } from './../data/constants'
 import Backdrop from './Backdrop'
 
 const Header = () => {
@@ -11,22 +12,19 @@ const Header = () => {
    // Remove backdrop and hide sideDrawer
    const handleBackdrop = () => setSideDrawer(false)
 
-   let hamClass = 'hamburger'
+   let hamburgerClass = 'hamburger'
    let navClass = 'navigation'
    let backdrop
 
    if (sideDrawer) {
-      hamClass = 'hamburger active'
+      hamburgerClass = 'hamburger active'
       navClass = 'navigation active'
       backdrop = <Backdrop click={handleBackdrop} />
    }
 
-   // Navigation links
-   const navOptions = ['home', 'projects', 'about', 'experience', 'contact']
-
    return (
       <header>
-         <button className={hamClass} onClick={handleSideDrawer}>
+         <button className={hamburgerClass} onClick={handleSideDrawer}>
             <div className="line-one"></div>
             <div className="line-two"></div>
             <div className="line-three"></div>
@@ -34,13 +32,13 @@ const Header = () => {
          <nav className={navClass}>
             <ul>
                {
-                  navOptions.map((option, index) =>
+                  NAV_LINKS.map((link, index) => (
                      <li key={index}>
-                        <a href={`#${option}`} className="nav-link" onClick={handleSideDrawer}>
-                           {option}
+                        <a href={link.url} className="nav-link" onClick={handleSideDrawer}>
+                           {link.name}
                         </a>
                      </li>
-                  )
+                  ))
                }
             </ul>
          </nav>
@@ -48,15 +46,13 @@ const Header = () => {
             backdrop
          }
          <div className="external">
-            <a href="https://github.com/findshrey" title="Github" target="_blank">
-               <IconGithub />
-            </a>
-            <a href="https://www.linkedin.com/in/findshrey/" title="Linkedin" target="_blank">
-               <IconLinkedin />
-            </a>
-            <a href="mailto:shrey9april@gmail.com" title="Email" target="_blank">
-               <IconEmail />
-            </a>
+            {
+               EXTERNAL_LINKS.map((link, index) => (
+                  <a key={index} href={link.url} title={link.name} target="_blank">
+                     {link.icon}
+                  </a>
+               ))
+            }
          </div>
       </header>
    )
