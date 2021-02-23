@@ -1,6 +1,8 @@
 import { Image, CloudinaryContext } from 'cloudinary-react'
 import { IconGithub, IconLink } from '../svg/Icons'
 
+import projectsToShow from './../../data/projects-to-show'
+
 const Projects = () => {
    return (
       <section id="projects" className="projects">
@@ -9,69 +11,42 @@ const Projects = () => {
                <h3>Some Things I've built</h3>
             </header>
             <CloudinaryContext cloudName="dg4arvkpw" className="projects-wrapper">
-               <div className="project">
-                  <div className="project-image">
-                     <a href="https://emmaearl.netlify.app" target="_blank">
-                        <Image
-                           publicId="portfolio/projects/emma-earl_cznfli.png"
-                           loading="lazy"
-                           srcSet="
-                              https://res.cloudinary.com/dg4arvkpw/image/upload/w_600/portfolio/projects/emma-earl_cznfli.png 600w,
-                              https://res.cloudinary.com/dg4arvkpw/image/upload/w_1200/portfolio/projects/emma-earl_cznfli.png 1200w"
-                           sizes="(max-width: 800px) 90vw, 45vw"
-                        />
-                     </a>
-                  </div>
-                  <div className="project-content">
-                     <h4>Emma Earl</h4>
-                     <p>A multipage photo gallery website i designed and built. Hosts over 100 images.</p>
-                     <ul className="project-tech-list">
-                        <li>Javascript</li>
-                        <li>CSS3</li>
-                        <li>HTML5</li>
-                     </ul>
-                     <div className="project-links">
-                        <a href="https://github.com/findshrey/photography-website" target="_blank">
-                           <IconGithub />
-                        </a>
-                        <a href="https://emmaearl.netlify.app" target="_blank">
-                           <IconLink />
-                        </a>
+               {
+                  projectsToShow.map((project) => (
+                     <div className="project">
+                        <div className="project-image">
+                           <a href={project.link} target="_blank">
+                              <Image
+                                 publicId={project.image.id}
+                                 loading="lazy"
+                                 srcSet={`${project.image.sm} 600w, ${project.image.md} 1200w`}
+                                 sizes="(max-width: 800px) 90vw, 45vw"
+                              />
+                           </a>
+                        </div>
+                        <div className="project-content">
+                           <h4>{project.name}</h4>
+                           <p>{project.about}</p>
+                           <ul className="project-tech-list">
+                              {
+                                 project.techList.map((tech) => (
+                                    <li>{tech}</li>
+                                 ))
+                              }
+                           </ul>
+                           <div className="project-links">
+                              <a href={project.github} target="_blank">
+                                 <IconGithub />
+                              </a>
+                              <a href={project.link} target="_blank">
+                                 <IconLink />
+                              </a>
+                           </div>
+                        </div>
                      </div>
-                  </div>
-               </div>
-               {/* ANOTHER */}
-               <div className="project">
-                  <div className="project-image">
-                     <a href="https://lacasetta.netlify.app" target="_blank">
-                        <Image
-                           publicId="portfolio/projects/la-casetta_uvq8xt.png"
-                           loading="lazy"
-                           srcSet="
-                              https://res.cloudinary.com/dg4arvkpw/image/upload/w_600/portfolio/projects/la-casetta_uvq8xt.png 600w,
-                              https://res.cloudinary.com/dg4arvkpw/image/upload/w_1200/portfolio/projects/la-casetta_uvq8xt.png 1200w"
-                           sizes="(max-width: 800px) 90vw, 45vw"
-                        />
-                     </a>
-                  </div>
-                  <div className="project-content">
-                     <h4>La Casetta</h4>
-                     <p>A single page restaurant web app focused on italian cuisine</p>
-                     <ul className="project-tech-list">
-                        <li>ReactJS</li>
-                        <li>SCSS</li>
-                        <li>HTML5</li>
-                     </ul>
-                     <div className="project-links">
-                        <a href="https://github.com/findshrey/restaurant-website" target="_blank">
-                           <IconGithub />
-                        </a>
-                        <a href="https://lacasetta.netlify.app" target="_blank">
-                           <IconLink />
-                        </a>
-                     </div>
-                  </div>
-               </div>
+                  ))
+               }
+
             </CloudinaryContext>
          </div>
       </section>
