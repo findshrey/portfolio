@@ -13,7 +13,7 @@ const Projects = () => {
             <CloudinaryContext cloudName="dg4arvkpw" className="projects-wrapper">
                {
                   projectsToShow.map((project) => (
-                     <div className="project">
+                     <div key={project.name} className="project">
                         <div className="project-image">
                            <a href={project.link} target="_blank">
                               <Image
@@ -29,8 +29,8 @@ const Projects = () => {
                            <p>{project.about}</p>
                            <ul className="project-tech-list">
                               {
-                                 project.techList.map((tech) => (
-                                    <li>{tech}</li>
+                                 project.techList.map((tech, index) => (
+                                    <li key={index}>{tech}</li>
                                  ))
                               }
                            </ul>
