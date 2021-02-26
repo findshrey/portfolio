@@ -13,17 +13,6 @@
    flex: 1 1 40%;
 }
 
-#dev {
-   animation: productivity 1.5s infinite alternate;
-   transform-origin: bottom;
-}
-
-#clock-hand {
-   animation: clock 2s infinite linear;
-   transform-box: fill-box;
-   transform-origin: bottom;
-}
-
 @keyframes productivity {
    from {
       transform: rotateZ(-4deg);
@@ -38,6 +27,17 @@
    100% {
       transform: rotate(360deg);
    }
+}
+
+#dev {
+   animation: productivity 1.5s infinite alternate;
+   transform-origin: bottom;
+}
+
+#clock-hand {
+   animation: clock 2s infinite linear;
+   transform-box: fill-box;
+   transform-origin: bottom;
 }
 
 .about-content {

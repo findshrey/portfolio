@@ -8,6 +8,7 @@ import IconLink from './../icons/IconLink'
 const Projects = () => {
    const [projects, setProjects] = useState([])
 
+   // Get data from firestore and update state
    useEffect(() => {
       let data = []
 
@@ -62,7 +63,6 @@ const Projects = () => {
                      </div>
                   ))
                }
-
             </CloudinaryContext>
          </div>
       </section>

@@ -6,6 +6,7 @@ import firebase from './../../firebase'
 const Experience = () => {
    const [experience, setExperience] = useState({})
 
+   // Get data from firestore and update state
    useEffect(() => {
       let data = {}
 
@@ -40,7 +41,7 @@ const Experience = () => {
                                     <h5>{work.companyName}</h5>
                                     <p>{work.jobTitle}</p>
                                  </div>
-                                 <p className="timeline-info-details">
+                                 <p className="timeline-info-description">
                                     {work.description}
                                  </p>
                               </div>
@@ -64,7 +65,7 @@ const Experience = () => {
                                     <h5>{edu.instituteName}</h5>
                                     <p>{edu.jobTitle}</p>
                                  </div>
-                                 <p className="timeline-info-details">{edu.description}</p>
+                                 <p className="timeline-info-description">{edu.description}</p>
                               </div>
                            </li>
                         ))
