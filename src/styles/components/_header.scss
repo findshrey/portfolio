@@ -36,7 +36,7 @@
 }
 
 .navigation {
-   background: $c-white;
+   background-color: $c-white;
    position: fixed;
    top: 0;
    left: 0;
@@ -44,7 +44,7 @@
    width: 45%;
    z-index: 95;
    transform: translateX(-100%);
-   transition: all 0.4s ease-in-out;
+   transition: transform 0.4s ease-in-out;
 
    &.active {
       transform: translateX(0);

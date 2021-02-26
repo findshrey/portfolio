@@ -1,11 +1,10 @@
 .hero {
    background: radial-gradient($c-black-matte, darken($c-black-matte, 10%));
    color: darken($c-white, 10%);
-   min-height: 100vh;
-   padding: $padding-section;
-   
    display: flex;
    align-items: center;
+   min-height: 100vh;
+   padding: $padding-section;
 }
 
 .hero-inner {
@@ -14,20 +13,16 @@
    justify-content: space-between;
 }
 
-//  Fade-in animation
-@keyframes fadeIn {
-   from {
-      transform: translateY(20px);
-   }
-
-   to {
+//  Element fade-in animation
+@keyframes fadeIn {100% {
       opacity: 1;
       transform: translateY(0px);
    }
 }
 
-@mixin animateText ($delay) {
+@mixin animateFadeIn ($delay) {
    opacity: 0;
+   transform: translateY(20px);
    animation: fadeIn 0.5s ease-in-out forwards $delay;
 }
 
@@ -37,39 +32,39 @@
    span {
       display: inline-block;
       margin-left: 5px;
-      @include animateText(2.2s);
+      @include animateFadeIn(2.2s);
    }
 
    h1 {
-      background: $c-gradient;
+      background: $c-pink-gradient;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       line-height: 1.4;
-      @include animateText(2.3s);
+      @include animateFadeIn(2.3s);
    }
 
    h2 {
       line-height: 1.4;
-      @include animateText(2.4s);
+      @include animateFadeIn(2.4s);
    }
 
    p {
-      letter-spacing: 0.5px;
+      // letter-spacing: 1px;
       margin: 3rem 0 5rem 0;
       max-width: 60rem;
-      @include animateText(2.5s);
+      @include animateFadeIn(2.5s);
    }
 }
 
 .call-to-action {
-   @include animateText(2.6s);
+   @include animateFadeIn(2.6s);
    
    a:nth-of-type(1) {
       margin-right: 2.5rem;
    }
 }
 
-// Spinning animation
+// Spin animation
 @keyframes spin {
    100% {
       transform: rotate(360deg);
@@ -99,7 +94,7 @@
 
 #path {
    opacity: 0;
-   animation: visibility 0.5s ease-in-out forwards 3.2s, // 1.3s
+   animation: visibility 0.5s ease-in-out forwards 3.2s,
       spin 10s linear infinite 3.7s;
    transform-box: fill-box;
    transform-origin: center;
@@ -114,24 +109,24 @@
       margin-right: 0;
       
       span {
-         @include animateText(0.5s);
+         @include animateFadeIn(0.5s);
       }
 
       h1 {
-         @include animateText(0.6s);
+         @include animateFadeIn(0.6s);
       }
 
       h2 {
-         @include animateText(0.7s);
+         @include animateFadeIn(0.7s);
       }
 
       p {
-         @include animateText(0.8s);
+         @include animateFadeIn(0.8s);
       }
    }
 
    .call-to-action {
-      @include animateText(0.9s);
+      @include animateFadeIn(0.9s);
    }
 }
 
