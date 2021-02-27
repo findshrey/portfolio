@@ -1,6 +1,6 @@
 .hero {
-   background: radial-gradient($c-black-matte, darken($c-black-matte, 10%));
-   color: darken($c-white, 10%);
+   background: $c-black-matte;
+   color: darken($c-white, 5%);
    display: flex;
    align-items: center;
    min-height: 100vh;
@@ -14,7 +14,8 @@
 }
 
 //  Element fade-in animation
-@keyframes fadeIn {100% {
+@keyframes fadeIn {
+   100% {
       opacity: 1;
       transform: translateY(0px);
    }
@@ -49,7 +50,6 @@
    }
 
    p {
-      // letter-spacing: 1px;
       margin: 3rem 0 5rem 0;
       max-width: 60rem;
       @include animateFadeIn(2.5s);

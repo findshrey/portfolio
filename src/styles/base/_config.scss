@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
 
 // Fonts
-$font-primary: 'Lato', sans-serif;
+$font-primary: 'Heebo', sans-serif;
 
 // Header sizes
-$h1: clamp(4rem, calc(3rem + 2.25vw), 6rem);
-$h2: clamp(4rem, calc(3rem + 2.25vw), 6rem);
+$h1: clamp(3.5rem, calc(3rem + 2.25vw), 6rem);
 $h3: clamp(3rem, calc(2.5rem + 1vw), 5rem);
 $h4: clamp(1.8rem, calc(1.5rem + 1vw), 3rem);
 
 // Text sizes
-// $font-l: clamp(1.8rem, calc(1.5rem + 0.75vw), 2.2rem);
 $font-m: clamp(1.5rem, calc(1rem + 0.75vw), 1.8rem);
-$font-s: 1.5rem;
+$font-s: 1.4rem;
 
 // Colors
 $c-black-matte: #252525;

@@ -35,7 +35,7 @@
    h3:after {
       content: "";
       display: block;
-      height: 4px;
+      height: 5px;
       width: 55px;
       margin: 0 auto;
       margin-top: 25px;
@@ -54,10 +54,10 @@
    
    &-pink {
       @extend %head-common;
-      color: darken($c-pink, 5%);
+      color: $c-pink;
 
       h3:after {
-         background: darken($c-pink, 5%);
+         background: $c-pink;
       }
    }
 
