@@ -24,15 +24,15 @@
       }
 
       input {
-         background: darken($c-white, 10%);
+         background-color: darken($c-white, 10%);
          border: none;
          border-radius: 3px;
          color: $c-black-matte;
-         font-family: $font-primary;
+         font-family: inherit;
          font-size: $font-s;
          display: block;
          width: 100%;
-         padding: 1.5rem;
+         padding: 1.2rem;
 
          &:focus {
             outline: none;
@@ -40,15 +40,15 @@
       }
 
       textarea {
-         background: darken($c-white, 10%);
+         background-color: darken($c-white, 10%);
          border: none;
          border-radius: 3px;
          color: $c-black-matte;
-         font-family: $font-primary;
+         font-family: inherit;
          font-size: $font-s;
          display: block;
          width: 100%;
-         padding: 1.5rem;
+         padding: 1.2rem;
          resize: none;
 
          &:focus {
@@ -61,7 +61,7 @@
       font-size: $font-s;
       font-weight: 500;
       letter-spacing: 1px;
-      padding: 1.5rem 0;
+      padding: 1.2rem 0;
       text-transform: uppercase;
       width: 100%;
    }

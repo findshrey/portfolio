@@ -17,12 +17,12 @@
 .btn {
    &-pink {
       @extend %btn-common;
-      background: $c-pink;
+      background-color: $c-pink;
       color: $c-white;
       padding: 1rem 2.5rem;
 
       &:hover {
-         background: darken($c-pink, 15%);
+         background-color: darken($c-pink, 10%);
       }
    }
 }
@@ -48,7 +48,7 @@
       color: $c-black-matte;
 
       h3:after {
-         background: $c-black-matte;
+         background-color: $c-black-matte;
       }
    }
    
@@ -57,7 +57,7 @@
       color: $c-pink;
 
       h3:after {
-         background: $c-pink;
+         background-color: $c-pink;
       }
    }
 
@@ -66,7 +66,7 @@
       color: darken($c-white, 5%);
 
       h3:after {
-         background: darken($c-white, 5%);
+         background-color: darken($c-white, 5%);
       }
    }
 }

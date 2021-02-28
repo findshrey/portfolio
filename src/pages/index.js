@@ -13,11 +13,18 @@ const PortfolioApp = () => {
   return (
     <>
       <Head>
-        {/* <meta name="description"
-          content="A taste of real Italy in Brooklyn from Chef Gerard Craft, featuring fresh pastas and wood-fired pizzas in a casual, family-friendly environment." />
-        <meta name="robots" content="index, follow" /> */}
+        <meta
+          name="description"
+          content="A front-end Web Developer specialising in Responsive Websites using HTML5, CSS3, and JavaScript"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
         <link rel="icon" type="image/png" href="/img/favicon.png" />
-        <title>Shrey Sharma | Front End Developer</title>
+        <title>Shrey Sharma | Front-End Web Developer</title>
       </Head>
       <Header />
       <main>

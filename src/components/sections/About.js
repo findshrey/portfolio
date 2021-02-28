@@ -28,6 +28,7 @@ const About = () => (
                   <li>JavaScript (ES6+)</li>
                   <li>React</li>
                   <li>Next.js</li>
+                  <li>Firebase</li>
                   <li>Figma</li>
                </ul>
             </div>

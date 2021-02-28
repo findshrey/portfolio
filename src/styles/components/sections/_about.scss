@@ -1,5 +1,5 @@
 .about {
-   background: $c-black-matte;
+   background-color: $c-black-matte;
    padding: $padding-section;
 }
 
@@ -69,7 +69,7 @@
          top: 50%;
          height: 8px;
          width: 8px;
-         background: darken($c-pink, 10%);
+         background-color: darken($c-pink, 10%);
          transform: translateY(-50%) rotate(45deg);
       }
    }
