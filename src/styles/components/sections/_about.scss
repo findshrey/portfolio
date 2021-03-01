@@ -4,7 +4,7 @@
 }
 
 .about-inner {
-   color: $c-white;
+   color: darken($c-white, 5%);
    display: flex;
    align-items: center;
 }

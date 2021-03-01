@@ -10,8 +10,8 @@ const Hero = () => (
                <h2>I build things for the web.</h2>
                <p>
                   I'm a software engineer based in Delhi, specializing in
-                  building (and occasionally designing) exceptional websites,
-                  applications, and everything in between.
+                  Front-end development, looking to facilitate the creation of modern and
+                  aesthetically pleasing websites.
                </p>
                <div className="call-to-action">
                   <a href="#projects" className="btn-pink">Projects</a>
