@@ -41,9 +41,11 @@ const Experience = () => {
                                     <h5>{work.companyName}</h5>
                                     <p>{work.jobTitle}</p>
                                  </div>
-                                 <p className="timeline-info-description">
-                                    {work.description}
-                                 </p>
+                                 <div className="timeline-info-achievements">
+                                    {
+                                       work.achievements.map((el, index) => <p key={index}>{el}</p>)
+                                    }
+                                 </div>
                               </div>
                            </li>
                         ))
@@ -65,7 +67,11 @@ const Experience = () => {
                                     <h5>{edu.instituteName}</h5>
                                     <p>{edu.jobTitle}</p>
                                  </div>
-                                 <p className="timeline-info-description">{edu.description}</p>
+                                 <div className="timeline-info-achievements">
+                                    {
+                                       edu.achievements.map((el, index) => <p key={index}>{el}</p>)
+                                    }
+                                 </div>
                               </div>
                            </li>
                         ))

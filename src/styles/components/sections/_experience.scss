@@ -55,6 +55,7 @@
    }
 
    li {
+      font-weight: 500;
       position: relative;
       margin-bottom: 3rem;
       max-width: 500px;
@@ -107,8 +108,12 @@
    }
 }
 
-.timeline-info-description {
+.timeline-info-achievements p {
    font-size: $font-s;
+
+   &:nth-child(n+2) {
+      margin-top: 1rem;
+   }
 }
 
 @media (max-width: 800px) {
