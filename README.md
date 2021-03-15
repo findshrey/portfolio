@@ -32,4 +32,4 @@ The first iteration of my personal portfolio built with [Next.js](https://nextjs
    
 ## :page_with_curl: LICENSE
 
-[MIT](LICENSE)
+The [MIT](LICENSE) License
