@@ -4,15 +4,23 @@ The first iteration of my personal portfolio built with [Next.js](https://nextjs
 
 ![demo](src/readme_images/demo.png?raw=true)
 
-## :hammer_and_wrench: Installation & Set Up
+## Installation & Set Up
 
-1. Install dependencies
+1. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+
+   To verify that nvm has been installed, do:
+
+   ```sh
+   command -v nvm
+   ```
+
+2. Install dependencies
 
    ```sh
    npm install
    ```
 
-2. Start the development server
+3. Start the development server
 
    ```sh
    npm run dev
@@ -22,7 +30,7 @@ The first iteration of my personal portfolio built with [Next.js](https://nextjs
 
    You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
    
-## :rocket: Building for Production
+## Building for Production
 
 1. Generate a full static production build
 
@@ -30,6 +38,6 @@ The first iteration of my personal portfolio built with [Next.js](https://nextjs
    npm run build
    ```
    
-## :page_with_curl: LICENSE
+## LICENSE
 
 The [MIT](LICENSE) License
