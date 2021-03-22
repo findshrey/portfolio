@@ -17,7 +17,7 @@ const PortfolioApp = () => {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta
                name="description"
-               content="Shrey Sharma. A front-end web developer specialising in responsive websites using HTML5, CSS3, and JavaScript"
+               content="Shrey Sharma. A front-end web developer specializing in responsive web apps using React.js"
             />
             <meta name="robots" content="index, follow" />
             <link rel="preconnect" href="https://fonts.gstatic.com" />
