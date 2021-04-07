@@ -12,7 +12,7 @@ const Projects = () => {
    useEffect(() => {
       let data = []
 
-      firebase.firestore().collection('projects').get().then((snapshot) => {
+      firebase.firestore().collection('projects').orderBy('id', 'asc').get().then((snapshot) => {
          snapshot.docs.forEach((doc) => {
             data = [...data, doc.data()]
          })
