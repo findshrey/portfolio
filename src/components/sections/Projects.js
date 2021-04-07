@@ -36,7 +36,7 @@ const Projects = () => {
                               <Image
                                  publicId={project.image.id}
                                  loading="lazy"
-                                 srcSet={`${project.image.sm} 600w, ${project.image.md} 1200w`}
+                                 srcSet={`${project.image.sm} 750w, ${project.image.md} 1500w`}
                                  sizes="(max-width: 800px) 90vw, 45vw"
                               />
                            </a>
