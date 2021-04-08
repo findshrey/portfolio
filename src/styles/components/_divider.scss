@@ -5,8 +5,8 @@
 }
 
 .divider {
-   min-height: 250px;
    background-color: $c-pink;
+   min-height: 250px;
    position: relative;
 
    display: flex;
@@ -24,7 +24,7 @@
    }
 
    &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: -1px;
       height: 25vh;

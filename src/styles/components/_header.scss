@@ -1,7 +1,6 @@
 .hamburger {
    background-color: transparent;
    border: none;
-   cursor: pointer;
    mix-blend-mode: difference;
    position: fixed;
    top: 0;
@@ -66,7 +65,7 @@
    position: relative;
 
    &::after {
-      content: "";
+      content: '';
       background-color: $c-pink;
       position: absolute;
       top: 50%;

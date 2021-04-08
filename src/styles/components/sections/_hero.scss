@@ -109,24 +109,24 @@
       margin-right: 0;
       
       span {
-         @include animateFadeIn(0.5s);
-      }
-
-      h1 {
          @include animateFadeIn(0.6s);
       }
 
-      h2 {
+      h1 {
          @include animateFadeIn(0.7s);
       }
 
-      p {
+      h2 {
          @include animateFadeIn(0.8s);
+      }
+
+      p {
+         @include animateFadeIn(0.9s);
       }
    }
 
    .call-to-action {
-      @include animateFadeIn(0.9s);
+      @include animateFadeIn(1s);
    }
 }
 

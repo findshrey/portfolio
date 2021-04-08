@@ -63,10 +63,10 @@
       padding-left: 20px;
 
       &::before {
-         content: "";
+         content: '';
          position: absolute;
-         left: 0;
          top: 50%;
+         left: 0;
          height: 8px;
          width: 8px;
          background-color: darken($c-pink, 10%);

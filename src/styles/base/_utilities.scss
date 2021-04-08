@@ -9,7 +9,6 @@
 %btn-common {
    border: none;
    border-radius: 3px;
-   cursor: pointer;
    display: inline-block;
    transition: all 0.4s ease;
 }
@@ -33,7 +32,7 @@
    margin-bottom: calc(6rem + 1.5vw);
 
    h3:after {
-      content: "";
+      content: '';
       display: block;
       height: 5px;
       width: 55px;
