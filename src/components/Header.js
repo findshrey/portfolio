@@ -12,24 +12,22 @@ const Header = () => {
    // Remove backdrop and hide sideDrawer
    const handleBackdrop = () => setSideDrawer(false)
 
-   let hamburgerClass = 'hamburger'
-   let navClass = 'navigation'
+   let navStatus = ''
    let backdrop
 
    if (sideDrawer) {
-      hamburgerClass = 'hamburger active'
-      navClass = 'navigation active'
+      navStatus = 'active'
       backdrop = <Backdrop click={handleBackdrop} />
    }
 
    return (
       <header>
-         <button className={hamburgerClass} onClick={handleSideDrawer}>
+         <button className={`hamburger ${navStatus}`} onClick={handleSideDrawer}>
             <div className="line-one"></div>
             <div className="line-two"></div>
             <div className="line-three"></div>
          </button>
-         <nav className={navClass}>
+         <nav className={`navigation ${navStatus}`}>
             <ul>
                {
                   NAV_LINKS.map((link, index) => (
