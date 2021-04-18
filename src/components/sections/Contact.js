@@ -5,8 +5,14 @@ const Contact = () => (
             <h3>Get In Touch</h3>
          </header>
          <div className="form-wrapper">
-            <form name="contact-form" className="form" data-netlify="true" method="POST">
-               <input type="hidden" name="form-name" value="contact-form" />
+            <form
+               name="contact"
+               className="form"
+               data-netlify="true"
+               method="POST"
+               action="/"
+            >
+               <input type="hidden" name="form-name" value="contact" />
                <div className="form-input">
                   <label>Name:</label>
                   <input name="name" type="text" placeholder="Enter your name here" required />
