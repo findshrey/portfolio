@@ -10,9 +10,10 @@ const Contact = () => (
                className="form"
                data-netlify="true"
                method="POST"
-               action="/"
+            // action="/"
             >
-               <input type="hidden" name="form-name" value="contact" />
+               {/* Required for Netlify forms */}
+               <input type="hidden" name="form-name" value="contact" netlify-honeypot="bot-field" />
                <div className="form-input">
                   <label>Name:</label>
                   <input name="name" type="text" placeholder="Enter your name here" required />

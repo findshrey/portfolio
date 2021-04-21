@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Image, CloudinaryContext } from 'cloudinary-react'
 
-import firebase from './../../firebase'
+import firebase from './../../firebase/firebase'
 import IconGithub from './../icons/IconGithub'
 import IconLink from './../icons/IconLink'
 
