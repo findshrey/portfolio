@@ -107,6 +107,16 @@
    transform-origin: center;
 }
 
+@media (min-width: 1100px) {
+   .hero-text {
+      flex: 1 1 65%;
+   }
+
+   .hero-img {
+      flex: 1 1 35%;
+   }
+}
+
 @media (max-width: 800px) {
    .hero-img {
       display: none;

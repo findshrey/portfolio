@@ -27,12 +27,12 @@ const Projects = () => {
             <header className="head-pink">
                <h3>Some Things I've built</h3>
             </header>
-            <CloudinaryContext cloudName="dg4arvkpw" className="projects-wrapper">
+            <CloudinaryContext cloudName="dg4arvkpw" className="projects-inner">
                {
                   projects.map((project) => (
                      <div key={project.name} className="project">
                         <div className="project-image">
-                           <a href={project.link} target="_blank">
+                           <a href={project.link} target="_blank" rel="noreferrer">
                               <Image
                                  publicId={project.image.id}
                                  loading="lazy"
@@ -52,10 +52,10 @@ const Projects = () => {
                               }
                            </ul>
                            <div className="project-links">
-                              <a href={project.github} target="_blank">
+                              <a href={project.github} target="_blank" rel="noreferrer">
                                  <IconGithub />
                               </a>
-                              <a href={project.link} target="_blank">
+                              <a href={project.link} target="_blank" rel="noreferrer">
                                  <IconLink />
                               </a>
                            </div>

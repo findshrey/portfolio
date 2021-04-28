@@ -2,7 +2,7 @@
    padding: $padding-section;
 }
 
-.projects-wrapper {
+.projects-inner {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: clamp(4rem, calc(2rem + 4vw), 8rem);
@@ -54,14 +54,12 @@
 }
 
 @media (max-width: 800px) {
-   .projects-wrapper {
+   .projects-inner {
       grid-template-columns: 1fr;
       gap: 5rem;
    }
 
-   .project-content {
-      p {
-         max-width: 100%;
-      }
+   .project-content p {
+      max-width: 100%;
    }
 }
