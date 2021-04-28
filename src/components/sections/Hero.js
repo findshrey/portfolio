@@ -18,7 +18,9 @@ const Hero = () => (
                   <a href="#contact" className="btn-pink">Contact</a>
                </div>
             </div>
-            <Professional />
+            <div className="hero-img">
+               <Professional />
+            </div>
          </div>
       </div>
    </section>

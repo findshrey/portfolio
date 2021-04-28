@@ -13,7 +13,7 @@
    justify-content: space-between;
 }
 
-//  Element fade-in animation
+// Animation: Element fade-in
 @keyframes fadeIn {
    100% {
       opacity: 1;
@@ -28,6 +28,7 @@
 }
 
 .hero-text {
+   flex: 1 1 60%;
    margin-right: 1rem;
 
    span {
@@ -64,14 +65,20 @@
    }
 }
 
-// Spin animation
+.hero-img {
+   flex: 1 1 40%;
+   display: flex;
+   align-items: center;
+}
+
+// Animation: Spin
 @keyframes spin {
    100% {
       transform: rotate(360deg);
    }
 }
 
-// Opacity animation
+// Animation: Opacity
 @keyframes visibility {
    100% {
       opacity: 1;
@@ -101,7 +108,7 @@
 }
 
 @media (max-width: 800px) {
-   #professional {
+   .hero-img {
       display: none;
    }
 
