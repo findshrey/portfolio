@@ -1,15 +1,8 @@
 import Head from 'next/head'
 
-import Header from '../components/Header'
-import Hero from '../components/sections/Hero'
-import Projects from '../components/sections/Projects'
-import Divider from '../components/Divider'
-import About from '../components/sections/About'
-import Experience from '../components/sections/Experience'
-import Contact from '../components/sections/Contact'
-import Footer from '../components/Footer'
+import App from './../components/App'
 
-const PortfolioApp = () => {
+const HomePage = () => {
    return (
       <>
          <Head>
@@ -25,18 +18,9 @@ const PortfolioApp = () => {
             <link rel="icon" type="image/png" href="/img/favicon.png" />
             <title>Shrey Sharma | Front-End Web Developer</title>
          </Head>
-         <Header />
-         <main>
-            <Hero />
-            <Projects />
-            <Divider />
-            <About />
-            <Experience />
-            <Contact />
-         </main>
-         <Footer />
+         <App />
       </>
    )
 }
 
-export default PortfolioApp
+export default HomePage
