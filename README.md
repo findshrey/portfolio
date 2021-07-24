@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-The first iteration of my personal portfolio built with [Next.js](https://nextjs.org) and hosted with [Netlify](https://www.netlify.com).
+First iteration of my personal portfolio built with [Next.js](https://nextjs.org) and hosted with [Netlify](https://www.netlify.com).
 
 ![demo](readme_images/demo-1.png?raw=true)
 
