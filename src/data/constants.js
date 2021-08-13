@@ -1,46 +1,46 @@
-import IconGithub from './../components/icons/IconGithub'
-import IconLinkedIn from './../components/icons/IconLinkedIn'
-import IconEmail from './../components/icons/IconEmail'
+import IconGithub from "./../components/icons/IconGithub"
+import IconLinkedIn from "./../components/icons/IconLinkedIn"
+import IconEmail from "./../components/icons/IconEmail"
 
 const NAV_LINKS = [
    {
-      name: 'Home',
-      url: '#home'
+      name: "Home",
+      url: "#home",
    },
    {
-      name: 'Projects',
-      url: '#projects'
+      name: "Projects",
+      url: "#projects",
    },
    {
-      name: 'About',
-      url: '#about'
+      name: "About",
+      url: "#about",
    },
    {
-      name: 'Experience',
-      url: '#experience'
+      name: "Experience",
+      url: "#experience",
    },
    {
-      name: 'Contact',
-      url: '#contact'
-   }
+      name: "Contact",
+      url: "#contact",
+   },
 ]
 
 const EXTERNAL_LINKS = [
    {
-      name: 'Github',
-      url: 'https://github.com/findshrey',
-      icon: <IconGithub />
+      name: "Github",
+      url: "https://github.com/findshrey",
+      icon: <IconGithub />,
    },
    {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/findshrey',
-      icon: <IconLinkedIn />
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/findshrey",
+      icon: <IconLinkedIn />,
    },
    {
-      name: 'Email',
-      url: 'mailto:findshrey@outlook.com',
-      icon: <IconEmail />
-   }
+      name: "Email",
+      url: "mailto:findshrey@outlook.com",
+      icon: <IconEmail />,
+   },
 ]
 
 export { NAV_LINKS, EXTERNAL_LINKS }

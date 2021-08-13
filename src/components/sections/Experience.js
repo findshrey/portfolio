@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
-import * as FaIcons from 'react-icons/fa'
+import { useState, useEffect } from "react"
+import * as FaIcons from "react-icons/fa"
 
-import firebase from './../../firebase/firebase'
+import firebase from "./../../firebase/firebase"
 
 const Experience = () => {
    const [experience, setExperience] = useState({})
@@ -10,13 +10,17 @@ const Experience = () => {
    useEffect(() => {
       let data = {}
 
-      firebase.firestore().collection('experience').get().then((snapshot) => {
-         snapshot.docs.forEach((doc) => {
-            data = { ...data, ...doc.data() }
-         })
+      firebase
+         .firestore()
+         .collection("experience")
+         .get()
+         .then((snapshot) => {
+            snapshot.docs.forEach((doc) => {
+               data = { ...data, ...doc.data() }
+            })
 
-         setExperience(data)
-      })
+            setExperience(data)
+         })
    }, [])
 
    return (
@@ -32,24 +36,22 @@ const Experience = () => {
                      <h4>Work History</h4>
                   </div>
                   <ul className="timeline-content">
-                     {
-                        experience?.workHistory?.map((work, index) => (
-                           <li key={index}>
-                              <span className="timeline-date">{work.date}</span>
-                              <div className="timeline-info">
-                                 <div className="timeline-info-head">
-                                    <h5>{work.companyName}</h5>
-                                    <span>{work.jobTitle}</span>
-                                 </div>
-                                 <div className="timeline-info-achievements">
-                                    {
-                                       work.achievements.map((el, index) => <p key={index}>{el}</p>)
-                                    }
-                                 </div>
+                     {experience?.workHistory?.map((work, index) => (
+                        <li key={index}>
+                           <span className="timeline-date">{work.date}</span>
+                           <div className="timeline-info">
+                              <div className="timeline-info-head">
+                                 <h5>{work.companyName}</h5>
+                                 <span>{work.jobTitle}</span>
                               </div>
-                           </li>
-                        ))
-                     }
+                              <div className="timeline-info-achievements">
+                                 {work.achievements.map((el, index) => (
+                                    <p key={index}>{el}</p>
+                                 ))}
+                              </div>
+                           </div>
+                        </li>
+                     ))}
                   </ul>
                </div>
                <div className="timeline">
@@ -58,24 +60,22 @@ const Experience = () => {
                      <h4>Education</h4>
                   </div>
                   <ul className="timeline-content">
-                     {
-                        experience?.education?.map((edu, index) => (
-                           <li key={index}>
-                              <span className="timeline-date">{edu.date}</span>
-                              <div className="timeline-info">
-                                 <div className="timeline-info-head">
-                                    <h5>{edu.instituteName}</h5>
-                                    <span>{edu.jobTitle}</span>
-                                 </div>
-                                 <div className="timeline-info-achievements">
-                                    {
-                                       edu.achievements.map((el, index) => <p key={index}>{el}</p>)
-                                    }
-                                 </div>
+                     {experience?.education?.map((edu, index) => (
+                        <li key={index}>
+                           <span className="timeline-date">{edu.date}</span>
+                           <div className="timeline-info">
+                              <div className="timeline-info-head">
+                                 <h5>{edu.instituteName}</h5>
+                                 <span>{edu.jobTitle}</span>
                               </div>
-                           </li>
-                        ))
-                     }
+                              <div className="timeline-info-achievements">
+                                 {edu.achievements.map((el, index) => (
+                                    <p key={index}>{el}</p>
+                                 ))}
+                              </div>
+                           </div>
+                        </li>
+                     ))}
                   </ul>
                </div>
             </div>

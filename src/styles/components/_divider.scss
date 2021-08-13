@@ -25,12 +25,12 @@
    }
 
    &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -1px;
       height: 25vh;
       width: 100%;
-      background: url('/img/divider-wave.svg') no-repeat center bottom/cover;
+      background: url("/img/divider-wave.svg") no-repeat center bottom/cover;
       // display: block;
       // z-index: 1;
    }

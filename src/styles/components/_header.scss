@@ -27,7 +27,7 @@
       .line-one {
          transform: translateX(10px);
       }
-   
+
       .line-two {
          transform: translateX(5px);
          width: 24px;
@@ -66,7 +66,7 @@
    position: relative;
 
    &::after {
-      content: '';
+      content: "";
       background-color: $c-pink;
       position: absolute;
       top: 50%;
@@ -110,4 +110,4 @@
    }
 }
 
-// Z-index priority : Hamburger -> Drawer -> Backdrop -> Externals 
+// Z-index priority : Hamburger -> Drawer -> Backdrop -> Externals

@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-First iteration of my personal portfolio built with [Next.js](https://nextjs.org) and hosted with [Netlify](https://www.netlify.com).
+The First iteration of my personal portfolio built with [Next.js](https://nextjs.org) and hosted with [Netlify](https://www.netlify.com).
 
 ![demo](readme_images/demo-1.png?raw=true)
 
@@ -29,7 +29,7 @@ First iteration of my personal portfolio built with [Next.js](https://nextjs.org
    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
    You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-   
+
 ## Building for Production
 
 1. Generate a full static production build
@@ -37,7 +37,7 @@ First iteration of my personal portfolio built with [Next.js](https://nextjs.org
    ```sh
    npm run build
    ```
-   
+
 ## LICENSE
 
 The [MIT](LICENSE) License

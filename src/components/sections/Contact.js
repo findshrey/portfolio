@@ -10,23 +10,46 @@ const Contact = () => (
                className="form"
                data-netlify="true"
                method="POST"
-            // action="/"
+               // action="/"
             >
                {/* Required for Netlify forms */}
-               <input type="hidden" name="form-name" value="contact" netlify-honeypot="bot-field" />
+               <input
+                  type="hidden"
+                  name="form-name"
+                  value="contact"
+                  netlify-honeypot="bot-field"
+               />
                <div className="form-input">
                   <label>Name:</label>
-                  <input name="name" type="text" placeholder="Enter your name here" required />
+                  <input
+                     name="name"
+                     type="text"
+                     placeholder="Enter your name here"
+                     required
+                  />
                </div>
                <div className="form-input">
                   <label>Email:</label>
-                  <input name="email" type="email" placeholder="Enter your email here" required />
+                  <input
+                     name="email"
+                     type="email"
+                     placeholder="Enter your email here"
+                     required
+                  />
                </div>
                <div className="form-input">
                   <label>Message:</label>
-                  <textarea name="message" cols="30" rows="10" placeholder="Enter your message here" required />
+                  <textarea
+                     name="message"
+                     cols="30"
+                     rows="10"
+                     placeholder="Enter your message here"
+                     required
+                  />
                </div>
-               <button className="btn-pink" type="submit">Send Message</button>
+               <button className="btn-pink" type="submit">
+                  Send Message
+               </button>
             </form>
          </div>
       </div>

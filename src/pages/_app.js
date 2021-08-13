@@ -1,7 +1,7 @@
-import './../styles/main.scss'
+import "./../styles/main.scss"
 
 const App = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />
+   return <Component {...pageProps} />
 }
 
 export default App
