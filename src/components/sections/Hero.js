@@ -1,4 +1,4 @@
-import Professional from "./../illustrations/Professional"
+import Professional from "../illustrations/Professional"
 
 const Hero = () => (
    <section id="home" className="hero">

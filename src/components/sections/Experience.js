@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import * as FaIcons from "react-icons/fa"
 
-import firebase from "./../../firebase/firebase"
+import firebase from "../../firebase/firebase"
 
 const Experience = () => {
    const [experience, setExperience] = useState({})

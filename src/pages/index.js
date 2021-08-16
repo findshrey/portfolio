@@ -1,6 +1,11 @@
 import Head from "next/head"
 
-import App from "./../components/App"
+import About from "../components/sections/About"
+import Contact from "../components/sections/Contact"
+import Divider from "../components/Divider"
+import Experience from "../components/sections/Experience"
+import Hero from "../components/sections/Hero"
+import Projects from "../components/sections/Projects"
 
 const HomePage = () => {
    return (
@@ -24,7 +29,12 @@ const HomePage = () => {
             <link rel="icon" type="image/png" href="/img/favicon.png" />
             <title>Shrey Sharma | Front-End Web Developer</title>
          </Head>
-         <App />
+         <Hero />
+         <Projects />
+         <Divider />
+         <About />
+         <Experience />
+         <Contact />
       </>
    )
 }

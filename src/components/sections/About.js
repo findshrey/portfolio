@@ -1,4 +1,4 @@
-import DevProductivity from "./../illustrations/DevProductivity"
+import DevProductivity from "../illustrations/DevProductivity"
 
 const About = () => (
    <section id="about" className="about">

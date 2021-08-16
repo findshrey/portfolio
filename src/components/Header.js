@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { NAV_LINKS, EXTERNAL_LINKS } from "./../data/constants"
+import { NAV_LINKS, EXTERNAL_LINKS } from "../data/constants"
 import Backdrop from "./Backdrop"
 
 const Header = () => {
