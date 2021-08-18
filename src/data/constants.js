@@ -1,6 +1,6 @@
-import IconEmail from "./../components/icons/IconEmail"
-import IconGithub from "./../components/icons/IconGithub"
-import IconLinkedIn from "./../components/icons/IconLinkedIn"
+import IconEmail from "../icons/IconEmail"
+import IconGithub from "../icons/IconGithub"
+import IconLinkedIn from "../icons/IconLinkedIn"
 
 const NAV_LINKS = [
    {
