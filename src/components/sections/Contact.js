@@ -12,14 +12,14 @@ const Contact = () => (
                method="POST"
                // action="/"
             >
-               {/* Required for Netlify forms */}
+               {/* Hidden Input required for Netlify forms */}
                <input
                   type="hidden"
                   name="form-name"
                   value="contact"
                   netlify-honeypot="bot-field"
                />
-               <div className="form-input">
+               <div className="form-control">
                   <label>Name:</label>
                   <input
                      name="name"
@@ -28,7 +28,7 @@ const Contact = () => (
                      required
                   />
                </div>
-               <div className="form-input">
+               <div className="form-control">
                   <label>Email:</label>
                   <input
                      name="email"
@@ -37,7 +37,7 @@ const Contact = () => (
                      required
                   />
                </div>
-               <div className="form-input">
+               <div className="form-control">
                   <label>Message:</label>
                   <textarea
                      name="message"

@@ -32,8 +32,8 @@ const About = () => (
                   Here are a few technologies I've been working with recently:
                </p>
                <ul className="skillset">
-                  {SKILL_SET.map((skill) => (
-                     <li>{skill}</li>
+                  {SKILL_SET.map((skill, index) => (
+                     <li key={index}>{skill}</li>
                   ))}
                </ul>
             </div>
