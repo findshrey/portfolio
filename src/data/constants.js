@@ -43,4 +43,13 @@ const EXTERNAL_LINKS = [
    },
 ]
 
-export { NAV_LINKS, EXTERNAL_LINKS }
+const SKILL_SET = [
+   "HTML & (S)CSS",
+   "JavaScript (ES6+)",
+   "React",
+   "Redux",
+   "Next.js",
+   "Firebase",
+]
+
+export { NAV_LINKS, EXTERNAL_LINKS, SKILL_SET }

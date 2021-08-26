@@ -1,5 +1,7 @@
 import DevProductivity from "../illustrations/DevProductivity"
 
+import { SKILL_SET } from "../../data/constants"
+
 const About = () => (
    <section id="about" className="about">
       <div className="container">
@@ -30,12 +32,9 @@ const About = () => (
                   Here are a few technologies I've been working with recently:
                </p>
                <ul className="skillset">
-                  <li>HTML & (S)CSS</li>
-                  <li>JavaScript (ES6+)</li>
-                  <li>React</li>
-                  <li>Next.js</li>
-                  <li>Firebase</li>
-                  <li>Figma</li>
+                  {SKILL_SET.map((skill) => (
+                     <li>{skill}</li>
+                  ))}
                </ul>
             </div>
          </div>
