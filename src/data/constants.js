@@ -46,8 +46,8 @@ const EXTERNAL_LINKS = [
 const SKILL_SET = [
    "HTML & (S)CSS",
    "JavaScript (ES6+)",
-   "React",
-   "Redux",
+   "React (Hooks)",
+   "Redux (RTK)",
    "Next.js",
    "Firebase",
 ]
