@@ -36,22 +36,24 @@ const Experience = () => {
                      <h4>Work History</h4>
                   </div>
                   <ul className="timeline-content">
-                     {experience?.workHistory?.map((work, index) => (
-                        <li key={index}>
-                           <span className="timeline-date">{work.date}</span>
-                           <div className="timeline-info">
-                              <div className="timeline-info-head">
-                                 <h5>{work.companyName}</h5>
-                                 <span>{work.jobTitle}</span>
+                     {experience?.workHistory
+                        ?.sort((a, b) => a.id - b.id)
+                        .map((work, index) => (
+                           <li key={index}>
+                              <span className="timeline-date">{work.date}</span>
+                              <div className="timeline-info">
+                                 <div className="timeline-info-head">
+                                    <h5>{work.companyName}</h5>
+                                    <span>{work.jobTitle}</span>
+                                 </div>
+                                 <div className="timeline-info-achievements">
+                                    {work.achievements.map((el, index) => (
+                                       <p key={index}>{el}</p>
+                                    ))}
+                                 </div>
                               </div>
-                              <div className="timeline-info-achievements">
-                                 {work.achievements.map((el, index) => (
-                                    <p key={index}>{el}</p>
-                                 ))}
-                              </div>
-                           </div>
-                        </li>
-                     ))}
+                           </li>
+                        ))}
                   </ul>
                </div>
                <div className="timeline">
