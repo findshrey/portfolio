@@ -1,5 +1,5 @@
 .projects {
-   padding: $padding-section;
+   padding: $pad-y5_8;
 }
 
 .projects-inner {
@@ -39,7 +39,7 @@
    display: flex;
 
    li {
-      font-size: $font-s;
+      font-size: $fs-300;
       font-weight: 500;
       margin-right: 1rem;
    }

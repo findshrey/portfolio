@@ -21,23 +21,23 @@ html {
 body {
    background-color: $c-white;
    color: $c-black-matte;
-   font-family: $font-primary;
+   font-family: $ff-sans-hind;
    line-height: 1.6;
 }
 
 h1 {
-   font-size: $h1;
+   font-size: $fs-700;
 }
 h2 {
-   font-size: $h1;
+   font-size: $fs-700;
    font-weight: 600;
 }
 h3 {
-   font-size: $h3;
+   font-size: $fs-600;
    font-weight: 600;
 }
 h4 {
-   font-size: $h4;
+   font-size: $fs-500;
 }
 
 div,
@@ -48,7 +48,7 @@ li,
 button,
 label,
 input {
-   font-size: $font-m;
+   font-size: $fs-400;
 }
 
 ul {

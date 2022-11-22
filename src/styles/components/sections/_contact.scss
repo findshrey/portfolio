@@ -1,5 +1,5 @@
 .contact {
-   padding: $padding-section;
+   padding: $pad-y5_8;
 }
 
 .form-wrapper {
@@ -12,7 +12,7 @@
    max-width: 500px;
 
    &-control {
-      font-size: $font-s;
+      font-size: $fs-300;
       font-weight: 500;
       letter-spacing: 1px;
       margin-bottom: 2rem;
@@ -20,7 +20,7 @@
 
       label {
          display: block;
-         font-size: $font-s;
+         font-size: $fs-300;
       }
 
       input {
@@ -29,7 +29,7 @@
          border-radius: 3px;
          color: $c-black-matte;
          font-family: inherit;
-         font-size: $font-s;
+         font-size: $fs-300;
          display: block;
          width: 100%;
          padding: 1.2rem;
@@ -45,7 +45,7 @@
          border-radius: 3px;
          color: $c-black-matte;
          font-family: inherit;
-         font-size: $font-s;
+         font-size: $fs-300;
          display: block;
          width: 100%;
          padding: 1.2rem;
@@ -58,7 +58,7 @@
    }
 
    button {
-      font-size: $font-s;
+      font-size: $fs-300;
       font-weight: 500;
       letter-spacing: 1px;
       padding: 1.2rem 0;

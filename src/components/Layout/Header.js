@@ -49,7 +49,6 @@ const Header = () => {
                ))}
             </ul>
          </nav>
-         {backdrop}
          <ul className="external-links">
             {EXTERNAL_LINKS.map((link, index) => (
                <li key={index}>
@@ -64,6 +63,7 @@ const Header = () => {
                </li>
             ))}
          </ul>
+         {backdrop}
       </header>
    )
 }

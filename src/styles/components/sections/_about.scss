@@ -1,6 +1,6 @@
 .about {
    background-color: $c-black-matte;
-   padding: $padding-section;
+   padding: $pad-y5_8;
 }
 
 .about-inner {
@@ -60,7 +60,7 @@
 
    li {
       position: relative;
-      font-size: $font-m;
+      font-size: $fs-400;
       padding-left: 20px;
 
       &::before {
