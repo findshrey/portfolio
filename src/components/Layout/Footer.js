@@ -1,7 +1,7 @@
 const Footer = () => (
    <footer className="footer">
-      <div>Developed by Shrey Sharma</div>
-      <div>Copyright 2020 Shrey.</div>
+      <p>Developed by Shrey Sharma</p>
+      <p>Copyright 2020 Shrey.</p>
    </footer>
 )
 

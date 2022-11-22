@@ -50,19 +50,20 @@ const Header = () => {
             </ul>
          </nav>
          {backdrop}
-         <div className="external">
+         <ul className="external-links">
             {EXTERNAL_LINKS.map((link, index) => (
-               <a
-                  key={index}
-                  href={link.url}
-                  title={link.name}
-                  target="_blank"
-                  rel="noreferrer"
-               >
-                  {link.icon}
-               </a>
+               <li key={index}>
+                  <a
+                     href={link.url}
+                     title={link.name}
+                     target="_blank"
+                     rel="noreferrer"
+                  >
+                     {link.icon}
+                  </a>
+               </li>
             ))}
-         </div>
+         </ul>
       </header>
    )
 }
