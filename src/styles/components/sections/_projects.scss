@@ -8,14 +8,15 @@
    gap: clamp(4rem, calc(2rem + 4vw), 8rem);
 }
 
-.project-image {
+.img-wrapper {
    border-radius: 3px;
-   transition: transform 0.3s ease-in-out;
+   display: block; // turns <a> into a <div>
    margin-bottom: 3rem;
    overflow: hidden;
+   transition: transform 0.3s ease-in-out;
 
    &:hover {
-      transform: scale(1.05);
+      transform: scale(1.06);
    }
 
    img {
@@ -28,7 +29,7 @@
       font-weight: 500;
    }
 
-   p {
+   .description {
       color: darken($c-white, 50%);
       max-width: 500px;
       margin: 1rem 0 2rem 0;
@@ -59,7 +60,7 @@
       gap: 5rem;
    }
 
-   .project-content p {
+   .project-content .description {
       max-width: 100%;
    }
 }
