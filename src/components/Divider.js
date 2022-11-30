@@ -1,7 +1,7 @@
 const Divider = () => (
-   <section className="divider">
+   <div className="divider">
       <img src="/img/responsive.svg" />
-   </section>
+   </div>
 )
 
 export default Divider

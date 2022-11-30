@@ -37,7 +37,7 @@ const Projects = () => {
                      href={project.link}
                      target="_blank"
                      rel="noreferrer"
-                     className="img-wrapper"
+                     className="project-img"
                   >
                      <img
                         loading="lazy"
@@ -45,7 +45,7 @@ const Projects = () => {
                         sizes="(max-width: 800px) 90vw, 45vw"
                      />
                   </a>
-                  <figcaption className="project-content">
+                  <figcaption className="project-text">
                      <h4>{project.name}</h4>
                      <p className="description">{project.description}</p>
                      <ul className="project-tech-list">

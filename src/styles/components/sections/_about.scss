@@ -1,16 +1,16 @@
 .about {
    background-color: $c-black-matte;
    padding: $pad-y5_8;
-}
 
-.about-inner {
-   color: darken($c-white, 5%);
-   display: flex;
-   align-items: center;
-}
+   .container {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      align-items: center;
+   }
 
-.about-image {
-   flex: 1 1 40%;
+   .head-white {
+      grid-column: 1/-1;
+   }
 }
 
 // Animation: Rotation
@@ -41,8 +41,8 @@
    transform-origin: bottom;
 }
 
-.about-content {
-   flex: 1 1 60%;
+.about-text {
+   color: darken($c-white, 5%);
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -59,8 +59,8 @@
    row-gap: 0.3rem;
 
    li {
-      position: relative;
       font-size: $fs-400;
+      position: relative;
       padding-left: 20px;
 
       &::before {
@@ -77,12 +77,17 @@
 }
 
 @media (max-width: 800px) {
-   .about-inner {
-      flex-direction: column-reverse;
-      align-items: stretch;
+   .about .container {
+      grid-template-columns: 1fr;
+      align-items: center;
    }
 
-   .about-content {
+   .about-image {
+      order: 2;
+   }
+
+   .about-text {
+      order: 1;
       padding-left: 0;
       margin-bottom: 5rem;
    }
