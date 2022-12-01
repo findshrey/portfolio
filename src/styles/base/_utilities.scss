@@ -31,7 +31,12 @@
    text-align: center;
    margin-bottom: calc(6rem + 1.5vw);
 
-   h3:after {
+   h2 {
+      font-size: $fs-600;
+      font-weight: 600;
+   }
+
+   h2:after {
       content: "";
       display: block;
       height: 5px;
@@ -46,7 +51,7 @@
       @extend %head-common;
       color: $c-black-matte;
 
-      h3:after {
+      h2:after {
          background-color: $c-black-matte;
       }
    }
@@ -55,7 +60,7 @@
       @extend %head-common;
       color: $c-pink;
 
-      h3:after {
+      h2:after {
          background-color: $c-pink;
       }
    }
@@ -64,7 +69,7 @@
       @extend %head-common;
       color: darken($c-white, 5%);
 
-      h3:after {
+      h2:after {
          background-color: darken($c-white, 5%);
       }
    }

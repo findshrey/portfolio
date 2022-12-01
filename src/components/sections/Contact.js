@@ -1,7 +1,7 @@
 const Contact = () => (
    <section id="contact" className="contact container">
       <header className="head-pink">
-         <h3>Get In Touch</h3>
+         <h2>Get In Touch</h2>
       </header>
       <div className="form-wrapper">
          <form

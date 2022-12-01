@@ -28,7 +28,7 @@ const Projects = () => {
    return (
       <section id="projects" className="projects container">
          <header className="head-pink">
-            <h3>Some Things I've built</h3>
+            <h2>Some Things I've built</h2>
          </header>
          <div className="projects-inner">
             {projects.map((project) => (
@@ -46,7 +46,7 @@ const Projects = () => {
                      />
                   </a>
                   <figcaption className="project-text">
-                     <h4>{project.name}</h4>
+                     <h3>{project.name}</h3>
                      <p className="description">{project.description}</p>
                      <ul className="project-tech-list">
                         {project.techList.map((tech, index) => (

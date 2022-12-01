@@ -27,12 +27,12 @@ const Experience = () => {
       <section id="experience" className="experience">
          <div className="container">
             <header className="head-black">
-               <h3>My Experience</h3>
+               <h2>My Experience</h2>
             </header>
             <div className="timeline">
                <header className="timeline-head">
                   <FaBookmark className="icon" />
-                  <h4>Work History</h4>
+                  <h3>Work History</h3>
                </header>
                <ul className="timeline-content">
                   {experience?.workHistory
@@ -56,7 +56,7 @@ const Experience = () => {
             <div className="timeline">
                <header className="timeline-head">
                   <FaUserGraduate className="icon" />
-                  <h4>Education</h4>
+                  <h3>Education</h3>
                </header>
                <ul className="timeline-content">
                   {experience?.education?.map((edu, index) => (
