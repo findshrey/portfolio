@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { FaBookmark, FaUserGraduate } from "react-icons/fa"
 
+import Timeline from "../Timeline"
 import firebase from "../../firebase/firebase"
 
 const Experience = () => {
@@ -29,52 +30,16 @@ const Experience = () => {
             <header className="head-black">
                <h2>My Experience</h2>
             </header>
-            <div className="timeline">
-               <header className="timeline-head">
-                  <FaBookmark className="icon" />
-                  <h3>Work History</h3>
-               </header>
-               <ul className="timeline-content">
-                  {experience?.workHistory
-                     ?.sort((a, b) => a.id - b.id)
-                     .map((work, index) => (
-                        <li key={index}>
-                           <span className="timeline-date">{work.date}</span>
-                           <div className="timeline-info">
-                              <hgroup className="timeline-info-head">
-                                 <h4>{work.organizationName}</h4>
-                                 <p>{work.jobTitle}</p>
-                              </hgroup>
-                              {work.achievements.map((el, index) => (
-                                 <p key={index}>{el}</p>
-                              ))}
-                           </div>
-                        </li>
-                     ))}
-               </ul>
-            </div>
-            <div className="timeline">
-               <header className="timeline-head">
-                  <FaUserGraduate className="icon" />
-                  <h3>Education</h3>
-               </header>
-               <ul className="timeline-content">
-                  {experience?.education?.map((edu, index) => (
-                     <li key={index}>
-                        <span className="timeline-date">{edu.date}</span>
-                        <div className="timeline-info">
-                           <hgroup className="timeline-info-head">
-                              <h4>{edu.organizationName}</h4>
-                              <p>{edu.jobTitle ?? edu.course}</p>
-                           </hgroup>
-                           {edu.achievements.map((el, index) => (
-                              <p key={index}>{el}</p>
-                           ))}
-                        </div>
-                     </li>
-                  ))}
-               </ul>
-            </div>
+            <Timeline
+               icon={<FaBookmark className="icon" />}
+               heading="Work History"
+               timelineData={experience?.workHistory}
+            />
+            <Timeline
+               icon={<FaUserGraduate className="icon" />}
+               heading="Education"
+               timelineData={experience?.education}
+            />
          </div>
       </section>
    )
