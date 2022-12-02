@@ -40,6 +40,7 @@ const Projects = () => {
                      className="project-img"
                   >
                      <img
+                        alt={`Preview image for ${project.name}`}
                         loading="lazy"
                         srcSet={`${project.image.sm} 750w, ${project.image.md} 1500w`}
                         sizes="(max-width: 800px) 90vw, 45vw"
@@ -56,12 +57,18 @@ const Projects = () => {
                      <p className="project-links">
                         <a
                            href={project.github}
+                           aria-label="Project code link (github)"
                            target="_blank"
                            rel="noreferrer"
                         >
                            <IconGithub />
                         </a>
-                        <a href={project.link} target="_blank" rel="noreferrer">
+                        <a
+                           href={project.link}
+                           aria-label="Live project link"
+                           target="_blank"
+                           rel="noreferrer"
+                        >
                            <IconLink />
                         </a>
                      </p>

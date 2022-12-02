@@ -13,13 +13,14 @@
    .line-two,
    .line-three {
       background-color: $clr-white;
-      height: 2.5px;
+      height: 3px;
       width: 24px;
       margin: 5.5px auto;
       transition: all 0.2s ease-in-out;
    }
 
    .line-two {
+      height: 2px;
       width: 34px;
    }
 

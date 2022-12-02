@@ -27,6 +27,7 @@ const Header = () => {
    return (
       <header>
          <button
+            aria-label="Navigation Menu"
             className={`hamburger ${sideDrawerState}`}
             onClick={handleSideDrawer}
          >
@@ -54,6 +55,7 @@ const Header = () => {
                <li key={index}>
                   <a
                      href={link.url}
+                     aria-label={link.name}
                      title={link.name}
                      target="_blank"
                      rel="noreferrer"
