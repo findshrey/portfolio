@@ -1,6 +1,6 @@
 .hero {
-   background-color: $c-black-matte;
-   color: darken($c-white, 5%);
+   background-color: $clr-black-matte;
+   color: darken($clr-white, 5%);
    display: flex;
    align-items: center;
    min-height: 100vh;
@@ -38,7 +38,7 @@
    }
 
    h1 {
-      background: $c-pink-gradient;
+      background: $clr-pink-gradient;
       background-clip: text;
       font-size: $fs-700;
       line-height: 1.4;

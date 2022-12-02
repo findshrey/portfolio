@@ -1,5 +1,5 @@
 .about {
-   background-color: $c-black-matte;
+   background-color: $clr-black-matte;
    padding: $pad-y5_8;
 
    .container {
@@ -42,7 +42,7 @@
 }
 
 .about-text {
-   color: darken($c-white, 5%);
+   color: darken($clr-white, 5%);
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -70,7 +70,7 @@
          left: 0;
          height: 8px;
          width: 8px;
-         background-color: darken($c-pink, 10%);
+         background-color: darken($clr-pink, 10%);
          transform: translateY(-50%) rotate(45deg);
       }
    }

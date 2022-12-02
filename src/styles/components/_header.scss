@@ -12,7 +12,7 @@
    .line-one,
    .line-two,
    .line-three {
-      background-color: $c-white;
+      background-color: $clr-white;
       height: 2.5px;
       width: 24px;
       margin: 5.5px auto;
@@ -36,7 +36,7 @@
 }
 
 .navigation {
-   background-color: $c-white;
+   background-color: $clr-white;
    position: fixed;
    top: 0;
    left: -45%;
@@ -68,7 +68,7 @@
    // Hover effect
    &::after {
       content: "";
-      background-color: $c-pink;
+      background-color: $clr-pink;
       position: absolute;
       top: 50%;
       left: 0;
@@ -103,7 +103,7 @@
    }
 
    & a {
-      fill: $c-white;
+      fill: $clr-white;
    }
 }
 

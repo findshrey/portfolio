@@ -9,10 +9,10 @@ $fs-400: clamp(1.5rem, calc(1rem + 0.75vw), 1.8rem);
 $fs-300: 1.4rem;
 
 // Colors
-$c-black-matte: #252525;
-$c-pink: #e91e63;
-$c-pink-gradient: linear-gradient(to right, #e91e63, #e91ec7);
-$c-white: #fff;
+$clr-black-matte: #252525;
+$clr-pink: #e91e63;
+$clr-pink-gradient: linear-gradient(to right, #e91e63, #e91ec7);
+$clr-white: #fff;
 
 // Paddings & Margins
 $pad-y5_8: clamp(5rem, calc(4rem + 2vw), 8rem) 0;

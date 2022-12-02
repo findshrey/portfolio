@@ -16,12 +16,12 @@
 .btn {
    &-pink {
       @extend %btn-common;
-      background-color: $c-pink;
-      color: $c-white;
+      background-color: $clr-pink;
+      color: $clr-white;
       padding: 1rem 2.5rem;
 
       &:hover {
-         background-color: darken($c-pink, 10%);
+         background-color: darken($clr-pink, 10%);
       }
    }
 }
@@ -49,28 +49,28 @@
 .head {
    &-black {
       @extend %head-common;
-      color: $c-black-matte;
+      color: $clr-black-matte;
 
       h2:after {
-         background-color: $c-black-matte;
+         background-color: $clr-black-matte;
       }
    }
 
    &-pink {
       @extend %head-common;
-      color: $c-pink;
+      color: $clr-pink;
 
       h2:after {
-         background-color: $c-pink;
+         background-color: $clr-pink;
       }
    }
 
    &-white {
       @extend %head-common;
-      color: darken($c-white, 5%);
+      color: darken($clr-white, 5%);
 
       h2:after {
-         background-color: darken($c-white, 5%);
+         background-color: darken($clr-white, 5%);
       }
    }
 }

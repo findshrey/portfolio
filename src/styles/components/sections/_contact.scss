@@ -23,10 +23,10 @@
       }
 
       input {
-         background-color: darken($c-white, 10%);
+         background-color: darken($clr-white, 10%);
          border: none;
          border-radius: 3px;
-         color: $c-black-matte;
+         color: $clr-black-matte;
          width: 100%;
          padding: 1.2rem;
 
@@ -36,10 +36,10 @@
       }
 
       textarea {
-         background-color: darken($c-white, 10%);
+         background-color: darken($clr-white, 10%);
          border: none;
          border-radius: 3px;
-         color: $c-black-matte;
+         color: $clr-black-matte;
          width: 100%;
          padding: 1.2rem;
          resize: none;
