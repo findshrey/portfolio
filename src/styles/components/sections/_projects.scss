@@ -39,11 +39,11 @@
 
 .project-tech-list {
    display: flex;
+   gap: 1rem;
 
    li {
       font-size: $fs-300;
       font-weight: 500;
-      margin-right: 1rem;
    }
 }
 
@@ -63,5 +63,11 @@
 
    .project-text .description {
       max-width: 100%;
+   }
+}
+
+@media (max-width: 500px) {
+   .project-tech-list li {
+      text-align: center;
    }
 }
