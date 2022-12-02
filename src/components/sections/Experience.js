@@ -32,12 +32,12 @@ const Experience = () => {
             </header>
             <Timeline
                icon={<FaBookmark className="icon" />}
-               heading="Work History"
+               header="Work History"
                timelineData={experience?.workHistory}
             />
             <Timeline
                icon={<FaUserGraduate className="icon" />}
-               heading="Education"
+               header="Education"
                timelineData={experience?.education}
             />
          </div>

@@ -1,22 +1,22 @@
-const Timeline = ({ icon, heading, timelineData }) => {
+const Timeline = ({ icon, header, timelineData }) => {
    return (
       <div className="timeline">
          <header className="timeline-head">
             {icon}
-            <h3>{heading}</h3>
+            <h3>{header}</h3>
          </header>
          <ul className="timeline-content">
             {timelineData
                ?.sort((a, b) => b.id - a.id)
-               .map((data, index) => (
+               .map((dataEl, index) => (
                   <li key={index}>
-                     <span className="timeline-date">{data.date}</span>
+                     <span className="timeline-date">{dataEl.date}</span>
                      <div className="timeline-info">
                         <hgroup className="timeline-info-head">
-                           <h4>{data.organizationName}</h4>
-                           <p>{data.jobTitle ?? data.course}</p>
+                           <h4>{dataEl.organizationName}</h4>
+                           <p>{dataEl.jobTitle ?? dataEl.course}</p>
                         </hgroup>
-                        {data.achievements.map((el, index) => (
+                        {dataEl.achievements.map((el, index) => (
                            <p key={index}>{el}</p>
                         ))}
                      </div>
