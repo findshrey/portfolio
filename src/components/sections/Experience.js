@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react"
 import { FaBookmark, FaUserGraduate } from "react-icons/fa"
+import { collection, getDocs } from "firebase/firestore"
 
+import { db } from "../../firebase/firebase"
 import Timeline from "../Timeline"
-import firebase from "../../firebase/firebase"
 
 const Experience = () => {
    const [experience, setExperience] = useState({})
@@ -11,17 +12,17 @@ const Experience = () => {
    useEffect(() => {
       let data = {}
 
-      firebase
-         .firestore()
-         .collection("experience")
-         .get()
-         .then((snapshot) => {
-            snapshot.docs.forEach((doc) => {
-               data = { ...data, ...doc.data() }
-            })
+      const getData = async () => {
+         const querySnapshot = await getDocs(collection(db, "experience"))
 
-            setExperience(data)
+         querySnapshot.forEach((doc) => {
+            data = { ...data, ...doc.data() }
          })
+
+         setExperience(data)
+      }
+
+      getData()
    }, [])
 
    return (

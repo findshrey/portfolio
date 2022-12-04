@@ -1,5 +1,5 @@
-import firebase from "firebase/app"
-import "firebase/firestore"
+import { initializeApp } from "firebase/app"
+import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
    apiKey: "AIzaSyAIjkxhLx81msXyiPGlSInBzavBR3Mgy24",
@@ -10,12 +10,8 @@ const firebaseConfig = {
    appId: "1:605945824853:web:f29631f6ea446596d3f6dc",
 }
 
-if (!firebase.apps.length) {
-   // Initialize firebase
-   firebase.initializeApp(firebaseConfig)
-} else {
-   // If already initialized, use that one
-   firebase.app()
-}
+// Initialize Firebase
+const app = initializeApp(firebaseConfig)
 
-export default firebase
+// Initialize Cloud Firestore and get a reference to the service
+export const db = getFirestore(app)
