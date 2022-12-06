@@ -1,31 +1,7 @@
-import { useState, useEffect } from "react"
-
 import IconGithub from "../../icons/IconGithub"
 import IconLink from "../../icons/IconLink"
-import { collection, getDocs } from "firebase/firestore"
 
-import { db } from "../../firebase/firebase"
-
-const Projects = () => {
-   const [projects, setProjects] = useState([])
-
-   // Get data from firestore and update state
-   useEffect(() => {
-      let data = []
-
-      const getData = async () => {
-         const querySnapshot = await getDocs(collection(db, "projects"))
-
-         querySnapshot.forEach((doc) => {
-            data = [...data, doc.data()]
-         })
-
-         setProjects(data)
-      }
-
-      getData()
-   }, [])
-
+const Projects = ({ projects }) => {
    return (
       <section id="projects" className="projects container">
          <header className="head-pink">

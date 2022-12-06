@@ -1,13 +1,17 @@
 import Head from "next/head"
+import { collection, getDocs } from "firebase/firestore"
 
+import { db } from "./../firebase/firebase"
 import About from "../components/sections/About"
 import Contact from "../components/sections/Contact"
-import Divider from "../components/Divider"
+import Wave from "../components/Wave"
 import Experience from "../components/sections/Experience"
 import Hero from "../components/sections/Hero"
 import Projects from "../components/sections/Projects"
 
-const HomePage = () => {
+const HomePage = (props) => {
+   const { projects } = props
+
    return (
       <>
          <Head>
@@ -30,13 +34,27 @@ const HomePage = () => {
             <title>Shrey Sharma | Front-End Web Developer</title>
          </Head>
          <Hero />
-         <Projects />
-         <Divider />
+         <Projects projects={projects} />
+         <Wave />
          <About />
          <Experience />
          <Contact />
       </>
    )
+}
+
+export async function getStaticProps() {
+   let data = []
+
+   const querySnapshot = await getDocs(collection(db, "projects"))
+
+   querySnapshot.forEach((doc) => {
+      data = [...data, doc.data()]
+   })
+
+   return {
+      props: { projects: data },
+   }
 }
 
 export default HomePage
