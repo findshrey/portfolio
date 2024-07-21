@@ -16,7 +16,7 @@ const Timeline = ({ icon, header, timelineData }) => {
                            <h4>{dataEl.organizationName}</h4>
                            <p>{dataEl.jobTitle ?? dataEl.course}</p>
                         </hgroup>
-                        {dataEl.achievements.map((el, index) => (
+                        {dataEl?.achievements?.map((el, index) => (
                            <p key={index}>{el}</p>
                         ))}
                      </div>
